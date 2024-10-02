@@ -1,0 +1,1854 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "nombreUsuario": "juanp",
+      "correo": "juan.perez@example.com",
+      "contraseña": "password123",
+      "image": "https://static.thenounproject.com/png/3110005-200.png"
+    },
+    {
+      "id": "2",
+      "nombre": "María",
+      "apellido": "González",
+      "nombreUsuario": "mariagonz",
+      "correo": "maria.gonzalez@example.com",
+      "password": "mypassword",
+      "image": "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/default-profile-picture-female-icon.png"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos",
+      "apellido": "López",
+      "nombreUsuario": "carlosl",
+      "correo": "carlos.lopez@example.com",
+      "contraseña": "12345678",
+      "image": "https://png.pngtree.com/png-clipart/20220911/original/pngtree-male-company-employee-avatar-icon-wearing-a-necktie-png-image_8537621.png"
+    },
+    {
+      "id": "4",
+      "nombre": "Ana",
+      "apellido": "Martínez",
+      "nombreUsuario": "anam",
+      "correo": "ana.martinez@example.com",
+      "contraseña": "abc123",
+      "image": "https://cdni.iconscout.com/illustration/premium/thumb/female-user-image-illustration-download-in-svg-png-gif-file-formats--person-girl-business-pack-illustrations-6515859.png?f=webp"
+    },
+    {
+      "id": "5",
+      "nombre": "Luis",
+      "apellido": "Hernández",
+      "nombreUsuario": "luish",
+      "correo": "luis.hernandez@example.com",
+      "contraseña": "pass777",
+      "image": "https://cdn-icons-png.flaticon.com/512/11320/11320006.png"
+    },
+    {
+      "id": "6",
+      "nombre": "Elena",
+      "apellido": "Ramírez",
+      "nombreUsuario": "elenar",
+      "correo": "elena.ramirez@example.com",
+      "contraseña": "qwerty",
+      "image": "https://cdn-icons-png.flaticon.com/512/6833/6833605.png"
+    }
+  ],
+  "recipe": [
+    {
+      "id": "1",
+      "idUser": 1,
+      "nombre": "Tacos de Carnitas",
+      "descripcion": "Tacos suaves llenos de cerdo desmenuzado, cebolla, cilantro y salsa. Un auténtico sabor mexicano.",
+      "imagen": "https://images.getrecipekit.com/20240130174128-carnitas-tacos.jpg?width=650&quality=90&",
+      "preparacion": "1. **Cocción de la carne**: En una olla grande, coloca la carne de cerdo y sazona con sal, pimienta, comino, orégano y ajo picado. Mezcla bien para que la carne se impregne de las especias. Añade la cebolla, las hojas de laurel y el caldo de pollo. Debe haber suficiente líquido para cubrir la carne al menos a la mitad. Si es necesario, agrega un poco de agua. 2. **Cocción lenta**: Lleva la olla a fuego alto hasta que comience a hervir. Luego, reduce el fuego a bajo y tapa la olla. Cocina a fuego lento durante aproximadamente 2 a 3 horas, o hasta que la carne esté tierna y se desmenuce fácilmente con un tenedor. Revísala de vez en cuando y agrega más líquido si es necesario. 3. **Desmenuzar la carne**: Una vez que la carne esté cocida, retírala de la olla y deja enfriar un poco. Desmenuza la carne con dos tenedores o con las manos. Retira cualquier exceso de grasa que encuentres. 4. **Dorar la carne (opcional)**: Si deseas un sabor más profundo y una textura crujiente, puedes dorar la carne desmenuzada en una sartén caliente con un poco de aceite. Cocina a fuego medio-alto durante unos minutos hasta que esté dorada por fuera. 5. **Calentar las tortillas**: Mientras la carne se enfría o se dora, calienta las tortillas de maíz en un comal o sartén caliente durante unos segundos de cada lado, hasta que estén calientes y suaves. 6. **Montar los tacos**: Para servir, coloca una porción de carne desmenuzada en el centro de cada tortilla caliente. Agrega cebolla picada y cilantro al gusto. Si lo prefieres, puedes añadir un chorrito de salsa. 7. **Disfrutar**: Sirve los tacos de carnitas inmediatamente, acompañados de más salsa y, si deseas, rodajas de limón para un toque extra de sabor."
+    },
+    {
+      "id": "2",
+      "idUser": 1,
+      "nombre": "Spaghetti Carbonara",
+      "descripcion": "Pasta espagueti con salsa cremosa de huevo, panceta y queso parmesano. Un plato italiano clásico.",
+      "imagen": "https://www.twopeasandtheirpod.com/wp-content/uploads/2023/01/Spaghetti-Carbonara168766.jpg",
+      "preparacion": "1. **Cocinar la pasta**: En una olla grande, lleva agua a ebullición y añade sal. Agrega los spaghetti y cocina según las instrucciones del paquete hasta que estén al dente. Reserva una taza del agua de cocción y escurre la pasta. 2. **Preparar la mezcla de huevo**: En un bol, bate los huevos y mezcla con el queso parmesano rallado y una buena cantidad de pimienta negra. 3. **Cocinar la panceta**: En una sartén grande, cocina la panceta a fuego medio hasta que esté crujiente. Retira del fuego y deja enfriar ligeramente. 4. **Combinar ingredientes**: Agrega los spaghetti escurridos a la sartén con la panceta. Remueve para mezclar todo bien. Luego, agrega rápidamente la mezcla de huevo y queso, utilizando el agua de cocción reservada para lograr una salsa cremosa. 5. **Servir**: Sirve inmediatamente con más queso parmesano y pimienta al gusto."
+    },
+    {
+      "id": "3",
+      "idUser": 1,
+      "nombre": "Biryani de Pollo",
+      "descripcion": "Un plato aromático de arroz especiado con pollo marinado y verduras, típico del subcontinente indio.",
+      "imagen": "https://indiamagica.com/wp-content/uploads/2016/04/biryani-de-pollo.jpg",
+      "preparacion": "1. **Marinar el pollo**: En un bol, mezcla el pollo con yogur, ajo y jengibre picados, cúrcuma, garam masala, chile en polvo y sal. Deja marinar durante al menos 30 minutos. 2. **Cocinar el arroz**: En una olla grande, hierve agua y añade el arroz basmati con un poco de sal. Cocina hasta que esté casi al dente, escurre y reserva. 3. **Cocinar el pollo**: En una sartén grande, calienta aceite y cocina la cebolla hasta que esté dorada. Luego, agrega el pollo marinado y cocina hasta que esté cocido. 4. **Montar el Biryani**: En una olla grande, coloca una capa de pollo cocinado, luego una capa de arroz, espolvorea con hojas de menta y cilantro. Repite el proceso hasta terminar los ingredientes. 5. **Cocinar a vapor**: Cubre con una tapa y cocina a fuego muy bajo durante 20-25 minutos para que los sabores se mezclen. 6. **Servir**: Sirve caliente, acompañado de raita o ensalada."
+    },
+    {
+      "id": "4",
+      "idUser": 1,
+      "nombre": "Pão de Queijo",
+      "descripcion": "Bocaditos de queso brasileños, crujientes por fuera y esponjosos por dentro.",
+      "imagen": "https://amopaocaseiro.com.br/wp-content/uploads/2022/08/yt-069_pao-de-queijo_receita.jpg",
+      "preparacion": "1. **Preparar la masa**: Precalienta el horno a 180°C. En una cacerola, calienta la leche, el aceite y la sal hasta que hierva. 2. **Mezclar ingredientes secos**: En un bol grande, combina el almidón de yuca y el queso rallado. 3. **Unir la masa**: Vierte la mezcla caliente sobre el almidón y queso, y mezcla hasta obtener una masa homogénea. Deja enfriar un poco. 4. **Agregar los huevos**: Añade los huevos uno a uno, mezclando bien después de cada adición, hasta que la masa esté suave y elástica. 5. **Dar forma a los panes**: Con las manos enharinadas, toma porciones de masa y forma pequeñas bolitas. 6. **Hornear**: Coloca las bolitas en una bandeja para hornear y hornea durante 20-25 minutos o hasta que estén doradas. 7. **Servir**: Retira del horno y sirve calientes."
+    },
+    {
+      "id": "5",
+      "idUser": 2,
+      "nombre": "Sushi",
+      "descripcion": "Rollos de arroz, pescado y algas. Es fresco y delicioso.",
+      "imagen": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0749D9BC-260D-40F4-A07F-54814C4A82B4/Derivates/A73A7793-F3EE-4B90-ABA4-1CC1A0C3E18F.jpg",
+      "preparacion": "1. **Preparar el arroz**: Lava el arroz hasta que el agua salga clara. Cocina en una olla con agua durante 20 minutos. Luego, deja reposar. 2. **Condimentar el arroz**: Mezcla el arroz caliente con vinagre de arroz, azúcar y sal. Deja enfriar. 3. **Preparar los ingredientes**: Corta el pescado y las verduras en tiras finas. 4. **Montar el sushi**: Coloca una hoja de alga nori sobre una estera de bambú, extiende una capa delgada de arroz sobre ella, dejando un margen superior. Añade el pescado y las verduras en el centro. 5. **Enrollar**: Con ayuda de la estera, enrolla firmemente el sushi, presionando para que mantenga la forma. 6. **Cortar**: Corta el rollo en piezas de tamaño bocado con un cuchillo mojado. 7. **Servir**: Sirve con salsa de soja, wasabi y jengibre encurtido."
+    },
+    {
+      "id": "6",
+      "idUser": 2,
+      "nombre": "Curry de Garbanzos",
+      "descripcion": "Un plato indio vegano y picante, hecho con garbanzos y especias. Se sirve comúnmente con arroz.",
+      "imagen": "https://www.gourmet.cl/wp-content/uploads/2022/08/curry-de-garbanzos-ajustada-web-570x458.jpg",
+      "preparacion": "1. **Sofreír las cebollas**: Calienta un poco de aceite en una cacerola y sofríe una cebolla picada hasta que esté dorada. 2. **Agregar ajo y jengibre**: Añade 2 dientes de ajo picados y un trozo de jengibre rallado. Sofríe por unos minutos adicionales hasta que estén fragantes. 3. **Incorporar especias**: Agrega 1 cucharada de cúrcuma, 1 cucharada de comino en polvo, y 1 cucharada de garam masala. Mezcla bien. 4. **Agregar tomate**: Incorpora un tomate picado y deja cocinar hasta que se ablande. 5. **Añadir garbanzos**: Agrega 400 g de garbanzos cocidos y mezcla. 6. **Verter leche de coco**: Añade 400 ml de leche de coco y cocina a fuego lento durante unos 15 minutos. 7. **Sazonar y servir**: Agrega sal al gusto y serve con arroz o pan, adornado con cilantro fresco."
+    },
+    {
+      "id": "7",
+      "idUser": 2,
+      "nombre": "Ensalada César",
+      "descripcion": "Una ensalada clásica con lechuga romana, crutones y aderezo cremoso. Perfecta como entrante.",
+      "imagen": "https://www.pequerecetas.com/wp-content/uploads/2017/09/ensalada-cesar.jpg",
+      "preparacion": "1. Lava y seca bien la lechuga romana. Corta las hojas en trozos grandes y colócala en un bol grande. \n\n2. Si decides agregar pollo, asegúrate de que esté cocido y cortado en tiras. Añádelo a la lechuga. \n\n3. Agrega los crutones sobre la lechuga y el pollo. \n\n4. Vierte el aderezo César sobre la ensalada y mezcla bien hasta que todos los ingredientes estén cubiertos uniformemente. \n\n5. Espolvorea el queso parmesano rallado por encima y añade un chorrito de jugo de limón al gusto. \n\n6. Finalmente, añade pimienta negra al gusto para dar un toque extra de sabor. \n\n7. Sirve inmediatamente y disfruta de tu fresca y deliciosa ensalada César."
+    },
+    {
+      "id": "8",
+      "idUser": 2,
+      "nombre": "Ramen",
+      "descripcion": "Sopa japonesa con fideos de trigo, caldo sabroso y carne. Un plato reconfortante.",
+      "imagen": "https://t2.uc.ltmcdn.com/es/posts/1/8/5/como_preparar_sopa_ramen_de_pollo_45581_600_square.jpg",
+      "preparacion": "1. En una olla grande, lleva a ebullición el caldo de pollo y agrega el jengibre rallado y la salsa de soja. Cocina a fuego lento durante 10 minutos para permitir que los sabores se mezclen. \n\n2. Mientras tanto, cocina los fideos de ramen según las instrucciones del paquete, normalmente de 3 a 5 minutos. Escurre y reserva. \n\n3. En recipientes individuales, coloca una porción de fideos de ramen. \n\n4. Vierte el caldo caliente con jengibre sobre los fideos. \n\n5. Añade las rodajas de pechuga de pollo y los huevos cocidos partidos por la mitad. \n\n6. Decora con cebolla verde picada y trozos de alga nori. \n\n7. Termina con un chorrito de aceite de sésamo para dar sabor. \n\n8. Sirve caliente y disfruta de tu ramen casero."
+    },
+    {
+      "id": "9",
+      "idUser": 3,
+      "nombre": "Moussaka",
+      "descripcion": "Plato griego con capas de berenjena, carne y salsa bechamel. Muy sustancioso.",
+      "imagen": "https://img.taste.com.au/u2KvYKcY/taste/2019/05/classic-moussaka-148669-2.jpeg",
+      "preparacion": "1. Precalienta el horno a 180 °C (350 °F). \n\n2. Espolvorea las rodajas de berenjena con sal y déjalas reposar durante 30 minutos para quitar el amargor. Luego, sécalas con papel absorbente. \n\n3. En una sartén grande, calienta 2 cucharadas de aceite de oliva y cocina las berenjenas hasta que estén doradas por ambos lados. Retira y reserva. \n\n4. En la misma sartén, añade el aceite de oliva restante y sofríe la cebolla y el ajo hasta que estén dorados. Agrega la carne de cordero y cocina hasta que esté bien dorada. \n\n5. Incorpora los tomates triturados, el puré de tomate, la canela, la pimienta y la sal. Cocina a fuego lento durante 15-20 minutos hasta que la mezcla espese. \n\n6. Para la salsa bechamel, derrite la mantequilla en una cacerola, agrega la harina y cocina, removiendo, durante 1-2 minutos. Añade lentamente la leche, batiendo constantemente hasta que espese. Retira del fuego y añade el queso parmesano y el huevo batido. \n\n7. En un recipiente para hornear, coloca una capa de berenjenas, luego una capa de la mezcla de carne y repite hasta terminar. Cubre la última capa con la salsa bechamel. \n\n8. Hornea en el horno precalentado durante 45 minutos hasta que la superficie esté dorada. \n\n9. Deja reposar durante unos minutos antes de cortar y servir. Disfruta de tu moussaka!"
+    },
+    {
+      "id": "10",
+      "idUser": 3,
+      "nombre": "Lasagna",
+      "descripcion": "Pasta con capas de carne, salsa de tomate y queso. Al hornearse, una delicia cremosa.",
+      "imagen": "https://alimentosdoria.com/wp-content/uploads/2023/06/Como-preparar-Lasagna-Mixta.jpg",
+      "preparacion": "1. Precalienta el horno a 180 °C (350 °F). \n\n2. En una sartén grande, calienta el aceite de oliva y añade la cebolla y el ajo. Sofríe hasta que estén tiernos. \n\n3. Agrega la carne molida a la sartén y cocina hasta que se dore. \n\n4. Incorpora el tomate triturado, el puré de tomate, el orégano, la albahaca, la sal y la pimienta. Cocina a fuego lento durante 20 minutos. \n\n5. En un tazón, mezcla el queso ricotta, el huevo y la mitad del queso parmesano. Reserva. \n\n6. En un recipiente para hornear, coloca una capa de salsa de carne, seguida de una capa de láminas de pasta, una capa de la mezcla de ricotta y una capa de queso mozzarella. Repite las capas, terminando con salsa de carne y una capa de mozzarella. \n\n7. Espolvorea el queso parmesano restante por encima. \n\n8. Cubre con papel aluminio y hornea durante 30 minutos. Luego, quita el papel aluminio y hornea por 15 minutos más, o hasta que esté burbujeante y dorado. \n\n9. Deja enfriar durante unos minutos antes de cortar y servir. ¡Disfruta de tu lasagna!"
+    },
+    {
+      "id": "11",
+      "idUser": 3,
+      "nombre": "Chili con Carne",
+      "descripcion": "Guiso picante de carne molida, frijoles y tomates. Ideal para días fríos.",
+      "imagen": "https://static01.nyt.com/images/2014/02/12/dining/12JPCHILI2/12JPCHILI2-superJumbo-v3.jpg",
+      "preparacion": "1. En una cacerola grande, calienta el aceite de oliva a fuego medio. Añade la cebolla, el ajo y el pimiento rojo, y sofríe hasta que estén tiernos. \n\n2. Agrega la carne molida y cocina hasta que esté dorada. \n\n3. Incorpora el tomate triturado, los frijoles rojos, la pasta de tomate, el comino, el pimentón, la cayena, la sal y la pimienta. \n\n4. Lleva a ebullición, luego reduce el fuego y deja cocinar a fuego lento durante 30-40 minutos, revolviendo ocasionalmente. \n\n5. Prueba y ajusta el sazón si es necesario. \n\n6. Sirve caliente, decorado con cilantro fresco al gusto. \n\n7. ¡Disfruta de tu chili con carne!"
+    },
+    {
+      "id": "12",
+      "idUser": 3,
+      "nombre": "Goulash",
+      "descripcion": "Guiso húngaro de carne, papas y especias. Un plato reconfortante para el invierno.",
+      "imagen": "https://cdn0.recetasgratis.net/es/posts/7/7/2/gulash_o_goulash_hungaro_55277_orig.jpg",
+      "preparacion": "1. En una cacerola grande, calienta el aceite de oliva a fuego medio. Añade la cebolla y el ajo, y sofríe hasta que estén dorados. \n\n2. Añade los cubos de carne y cocina hasta que estén dorados por todos lados. \n\n3. Incorpora los pimientos rojo y verde, y cocina durante unos minutos hasta que se ablanden. \n\n4. Agrega el tomate triturado, el pimentón dulce, el comino, las hojas de laurel, la sal y la pimienta. Mezcla bien. \n\n5. Vierte el caldo de carne y lleva a ebullición. \n\n6. Reduce el fuego y cocina a fuego lento durante aproximadamente 1.5 a 2 horas, o hasta que la carne esté tierna. Revuelve ocasionalmente y añade más caldo si es necesario. \n\n7. Si deseas, cocina la pasta según las instrucciones del paquete para acompañar. \n\n8. Sirve el goulash caliente, acompañado de la pasta si lo deseas. \n\n9. ¡Disfruta de tu delicioso goulash!"
+    },
+    {
+      "id": "13",
+      "idUser": 4,
+      "nombre": "Ceviche",
+      "descripcion": "Plato peruano de pescado marinado en jugo de limón, cebolla y ají. Muy fresco.",
+      "imagen": "https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/e27c310d66805447a62e25cbcd696442.jpg",
+      "preparacion": "1. En un bowl grande, mezcla el pescado cortado en cubos con el jugo de limón. Asegúrate de que el pescado esté completamente cubierto por el jugo. \n\n2. Cubre el bowl con plástico adherente y deja marinar en el refrigerador durante unos 15-30 minutos, hasta que el pescado opaque y esté cocido por el ácido del limón. \n\n3. Agrega la cebolla, el tomate, el cilantro, el ají, la sal y la pimienta al bowl. Mezcla suavemente todos los ingredientes. \n\n4. Si deseas, agrega rodajas de aguacate para servir. \n\n5. Sirve el ceviche frío, acompañado de tortilla chips o tostadas. \n\n6. ¡Disfruta de tu ceviche fresco!"
+    },
+    {
+      "id": "14",
+      "idUser": 4,
+      "nombre": "Pesto Pasta",
+      "descripcion": "Pasta con salsa de albahaca, ajo y nueces. Fresco y perfecto para una comida rápida.",
+      "imagen": "https://richanddelish.com/wp-content/uploads/2023/02/creamy-pesto-pasta-1.jpg",
+      "preparacion": "1. Cocina la pasta según las instrucciones del paquete en agua con sal hasta que esté al dente. Escúrrela y reserva un poco del agua de la cocción. \n\n2. Mientras la pasta se cocina, prepara el pesto. En un procesador de alimentos, combina la albahaca, los piñones, el ajo y el queso parmesano. Procesa hasta obtener una mezcla homogénea. \n\n3. Con el procesador en marcha, añade lentamente el aceite de oliva hasta que se forme una salsa cremosa. Si es necesario, ajusta la consistencia usando un poco del agua de la cocción de la pasta. \n\n4. Prueba y ajusta el sazón con sal y pimienta al gusto. \n\n5. Mezcla la pasta caliente con el pesto en un bowl grande. Si la mezcla está demasiado espesa, añade un poco del agua de la cocción reservada para aligerarla. \n\n6. Sirve en platos, decorado con más queso parmesano y un chorrito de aceite de oliva si lo deseas. \n\n7. ¡Disfruta de tu deliciosa Pesto Pasta!"
+    },
+    {
+      "id": "15",
+      "idUser": 4,
+      "nombre": "Sopa de Lentejas",
+      "descripcion": "Sopa nutritiva hecha con lentejas, zanahorias y especias. Ideal para días fríos.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rZW1LOq0wRsn0tIUOJmohF1Fd0rhIQD6wg&s",
+      "preparacion": "1. En una olla grande, calienta el aceite de oliva a fuego medio. Agrega la cebolla, el ajo, la zanahoria y el apio, y sofríe hasta que estén tiernos, unos 5-7 minutos. \n\n2. Añade las lentejas, el tomate (si lo usas), el comino, la hoja de laurel, la sal y la pimienta. Revuelve bien. \n\n3. Vierte el caldo de verduras o agua y lleva la mezcla a ebullición. \n\n4. Reduce el fuego y cocina a fuego lento durante aproximadamente 25-30 minutos, o hasta que las lentejas estén tiernas. Revuelve ocasionalmente y agrega más agua si es necesario. \n\n5. Retira la hoja de laurel antes de servir. \n\n6. Ajusta el sazón si es necesario y sirve caliente. \n\n7. ¡Disfruta de tu deliciosa y nutritiva Sopa de Lentejas!"
+    },
+    {
+      "id": "16",
+      "idUser": 4,
+      "nombre": "Pancakes",
+      "descripcion": "Tortitas esponjosas servidas con jarabe de arce y frutas. Perfectas para el desayuno.",
+      "imagen": "https://myplate-prod.azureedge.us/sites/default/files/styles/large/public/2020-10/Pancakes_527x323.jpg?itok=urFjVgTr",
+      "preparacion": "1. En un bowl grande, mezcla la harina, el azúcar, el polvo de hornear y la sal. \n\n2. En otro bowl, bate el huevo y agrega la leche, la mantequilla derretida y el extracto de vainilla. Mezcla bien. \n\n3. Vierte los ingredientes líquidos en los ingredientes secos y mezcla suavemente hasta que estén combinados. No te preocupes si quedan algunos grumos; no mezcles en exceso. \n\n4. Calienta una sartén antiadherente a fuego medio. Puedes engrasarla ligeramente con un poco de mantequilla o aceite. \n\n5. Vierte una porción de la masa (aproximadamente 1/4 de taza) en la sartén caliente. Cocina hasta que aparezcan burbujas en la superficie y los bordes se vean cocidos, unos 2-3 minutos. \n\n6. Voltea el pancake y cocina por el otro lado durante 1-2 minutos más, hasta que esté dorado. \n\n7. Repite el proceso con el resto de la masa, manteniendo los pancakes cocidos en un plato tibio. \n\n8. Sirve los pancakes calientes con tus toppings favoritos, como jarabe de arce, frutas, crema batida, o lo que prefieras. \n\n9. ¡Disfruta de tus deliciosos pancakes!"
+    },
+    {
+      "id": "17",
+      "idUser": 5,
+      "nombre": "Falafel",
+      "descripcion": "Bolas fritas de garbanzos, hierbas y especias. Se sirven en pita con salsa tahini.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbo9aXEVUdQjR3hkQkDks-8A4ffiuWgI8vtg&s",
+      "preparacion": "1. Remoja los garbanzos en agua durante al menos 8 horas o toda la noche. Escurre y enjuaga bien. \n\n2. En un procesador de alimentos, combina los garbanzos, la cebolla, el ajo, el perejil, el cilantro, el comino, el cilantro molido, el bicarbonato de sodio, la sal y la pimienta. Procesa hasta obtener una mezcla homogénea, pero con algo de textura. \n\n3. Transfiere la mezcla a un bowl y refrigérala durante 30 minutos para que se endurezca. \n\n4. Con las manos, forma pequeñas bolas o discos con la mezcla. \n\n5. Calienta suficiente aceite en una sartén profunda a fuego medio-alto. \n\n6. Fría los falafels en lotes hasta que estén dorados y crujientes, aproximadamente 3-4 minutos por cada lado. Retíralos y colócalos sobre papel toalla para drenar el exceso de aceite. \n\n7. Sirve los falafels calientes con tahini, salsa de yogur, ensalada o en un pan pita. \n\n8. ¡Disfruta de tus deliciosos falafels!"
+    },
+    {
+      "id": "18",
+      "idUser": 5,
+      "nombre": "Bruschetta",
+      "descripcion": "Rebanadas de pan tostado con tomate, albahaca y aceite de oliva. Aperitivo ligero.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ZWLNanlb-Xb6Rp9aXauzBmoerJI0wNW47A&s",
+      "preparacion": "1. Precalienta el horno a 200 °C (390 °F). \n\n2. Coloca las rebanadas de pan en una bandeja de horno y rocía con un poco de aceite de oliva. \n\n3. Tuesta el pan en el horno durante unos 5-7 minutos, hasta que esté dorado y crujiente. \n\n4. Mientras se tuesta el pan, prepara la mezcla de tomate. En un bowl, combina los tomates picados, la albahaca, 1-2 cucharadas de aceite de oliva, sal y pimienta. Mezcla bien. \n\n5. Una vez el pan esté listo, retíralo del horno y frota un lado de cada rebanada con el diente de ajo. \n\n6. Coloca una cucharada generosa de la mezcla de tomate sobre cada rebanada de pan. \n\n7. Rocía con un poco más de aceite de oliva si lo deseas y añade más sal y pimienta al gusto. \n\n8. Sirve inmediatamente y disfruta de tu deliciosa Bruschetta."
+    },
+    {
+      "id": "19",
+      "idUser": 5,
+      "nombre": "Pollo Teriyaki",
+      "descripcion": "Pollo marinado en salsa dulce, servido con arroz y verduras al vapor.",
+      "imagen": "https://www.tamingtwins.com/wp-content/uploads/2023/01/teriyaki-chicken-7.jpg",
+      "preparacion": "1. En un tazón, mezcla la salsa de soja, la miel (o azúcar moreno), el vinagre de arroz, el jengibre y el ajo. Revuelve hasta que la miel se disuelva completamente. \n\n2. Agrega los trozos de pollo a la mezcla y marina en el refrigerador durante al menos 30 minutos, preferiblemente 1-2 horas. \n\n3. Calienta el aceite de sésamo en una sartén grande a fuego medio-alto. \n\n4. Retira el pollo de la marinada (reserva la marinada) y cocina el pollo en la sartén hasta que esté dorado y cocido, aproximadamente 5-7 minutos. \n\n5. Añade la marinada reservada a la sartén y cocina a fuego lento durante 2-3 minutos, hasta que la salsa espese un poco. \n\n6. Sirve el pollo teriyaki caliente, decorado con cebollín picado, acompañado de arroz si lo deseas. \n\n7. ¡Disfruta de tu delicioso Pollo Teriyaki!"
+    },
+    {
+      "id": "20",
+      "idUser": 5,
+      "nombre": "Babka",
+      "descripcion": "Pastel trenzado con relleno de chocolate o canela. Ideal para el desayuno.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHawcaBST_AM-P4KNM_dAQD55oPh3LRHsfDg&s",
+      "preparacion": "1. En un tazón grande, mezcla la leche tibia, el azúcar y la levadura. Deja reposar durante 10 minutos hasta que espume. \n\n2. Agrega los huevos, la mantequilla derretida y la sal, y mezcla bien. \n\n3. Incorpora la harina poco a poco, amasando hasta obtener una masa suave y elástica. \n\n4. Cubre la masa con un paño y deja que repose en un lugar cálido durante 1-2 horas, o hasta que duplique su tamaño. \n\n5. Precalienta el horno a 180 °C (350 °F). \n\n6. Una vez que la masa haya leveado, enharina una superficie y estira la masa en un rectángulo. \n\n7. Extiende el chocolate rallado (o mezcla de canela) sobre la masa y espolvorea las nueces si las usas. \n\n8. Enrolla la masa desde un lado largo, formando un cilindro. Corta el cilindro a lo largo para exponer el relleno. \n\n9. Trenza las dos partes cortadas y colócalas en un molde para pan engrasado. \n\n10. Deja reposar la masa trenzada durante otros 30-45 minutos. \n\n11. Hornea durante 30-35 minutos, o hasta que esté dorada y cocida por dentro. \n\n12. Deja enfriar antes de desmoldar y espolvorea con azúcar glas si deseas. \n\n13. ¡Disfruta de tu deliciosa Babka!"
+    },
+    {
+      "id": "21",
+      "idUser": 6,
+      "nombre": "Papas Bravas",
+      "descripcion": "Patatas fritas con salsa picante, un aperitivo clásico ibérico.",
+      "imagen": "https://www.goya.com/media/7699/spicy-potatoes.jpg?quality=80",
+      "preparacion": "1. Calienta abundante aceite de oliva en una sartén grande a fuego medio-alto. \n\n2. Mientras el aceite se calienta, pon las papas en una olla con agua y una pizca de sal. Lleva a ebullición y cocina durante 5-7 minutos hasta que estén ligeramente tiernas, luego escúrrelas y sécalas. \n\n3. Cuando el aceite esté caliente, añade las papas y fríelas hasta que estén doradas y crujientes, aproximadamente 10-15 minutos. \n\n4. Retira las papas del aceite y colócalas sobre papel absorbente para eliminar el exceso de grasa. \n\n5. En un tazón pequeño, mezcla el pimentón dulce, el pimiento picante (si lo usas) y el vinagre. \n\n6. Vierte la mezcla de pimentón sobre las papas y salpimienta al gusto. Mezcla bien para que se impregnen. \n\n7. Sirve las Papas Bravas calientes, acompañadas de mayonesa si lo deseas. \n\n8. ¡Disfruta de tus deliciosas Papas Bravas!"
+    },
+    {
+      "id": "22",
+      "idUser": 6,
+      "nombre": "Carbonade Flamande",
+      "descripcion": "Guiso belga de carne cocido en cerveza con cebolla y especias. Ideal para invierno.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfqEvecThmElxI0TDMTwGetoVqbxOqz0_AA&s",
+      "preparacion": "1. En una cacerola grande, calienta el aceite de oliva a fuego medio-alto. \n\n2. Agrega los trozos de carne de res y dora por todos lados. Retira la carne y resérvala. \n\n3. En la misma cacerola, añade las cebollas y cocina a fuego medio hasta que estén doradas y caramelizadas, alrededor de 10 minutos. \n\n4. Vuelve a incorporar la carne a la cacerola junto con la mostaza, el azúcar moreno, el tomillo y la hoja de laurel. Mezcla bien. \n\n5. Vierte la cerveza y el caldo de carne, y lleva a ebullición. Reduce el fuego y cocina a fuego lento, cubierto, durante aproximadamente 2 horas, o hasta que la carne esté tierna. \n\n6. Prueba y ajusta la sal y pimienta al gusto. \n\n7. Sirve caliente, acompañado de pan, puré de patatas o fideos. \n\n8. ¡Disfruta de tu delicioso Carbonade Flamande!"
+    },
+    {
+      "id": "23",
+      "idUser": 6,
+      "nombre": "Shakshuka",
+      "descripcion": "Desayuno del Medio Oriente con huevos en salsa de tomate. Perfecto con pan.",
+      "imagen": "https://saltedmint.com/wp-content/uploads/2024/02/Shakshuka-Eggs-2.jpg",
+      "preparacion": "1. Calienta el aceite de oliva en una sartén grande a fuego medio. \n\n2. Agrega la cebolla y cocina hasta que esté suave y dorada, unos 5 minutos. \n\n3. Añade el pimiento rojo y el ajo, y cocina por otros 2-3 minutos. \n\n4. Incorpora los tomates pelados (puedes aplastarlos un poco), el pimiento picante (si lo usas), el comino y la paprika. Mezcla bien y cocina a fuego lento durante unos 10 minutos, o hasta que la salsa se espese. \n\n5. Sazona con sal y pimienta al gusto. \n\n6. Con una cuchara, haz huecos en la salsa y rompe los huevos en cada hueco. \n\n7. Cubre la sartén y cocina a fuego lento durante 5-7 minutos, o hasta que las claras estén cocidas pero las yemas aún estén un poco líquidas. \n\n8. Retira del fuego y decora con perejil o cilantro fresco. \n\n9. Sirve caliente, acompañado de pan para mojar en la salsa. \n\n10. ¡Disfruta de tu deliciosa Shakshuka!"
+    },
+    {
+      "id": "24",
+      "idUser": 6,
+      "nombre": "Pudding de Chía",
+      "descripcion": "Postre saludable de semillas de chía y leche de almendras. Fácil de preparar.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ3hvtmcHNliUkia7iVmHHjsIQcaSqrtVDwg&s",
+      "preparacion": "1. En un tazón, mezcla las semillas de chía, la leche, la miel (o jarabe de arce) y el extracto de vainilla. \n\n2. Revuelve bien para asegurarte de que las semillas de chía estén completamente incorporadas. \n\n3. Deja reposar la mezcla durante unos 5-10 minutos, luego revuelve nuevamente para evitar que las semillas se agrupen. \n\n4. Cubre el tazón y refrigéralo durante al menos 2 horas o toda la noche para que las semillas de chía absorban el líquido y se forme una textura similar a un pudín. \n\n5. Una vez que el pudín haya alcanzado la consistencia deseada, sírvelo en tazones o frascos. \n\n6. Decora con frutas frescas, frutos secos o granola si lo deseas. \n\n7. ¡Disfruta de tu delicioso y saludable Pudding de Chía!"
+    }
+  ],
+  "reseñas": [
+    {
+      "id": "1",
+      "idUser": 2,
+      "idRecipe": 1,
+      "comentario": "Los Tacos de Carnitas, realmente la mejor que he probado.",
+      "estrellas": 4.5
+    },
+    {
+      "id": "2",
+      "idUser": 2,
+      "idRecipe": 2,
+      "comentario": "La Carbonara está bien, pero le faltó un poco de sabor.",
+      "estrellas": 3
+    },
+    {
+      "id": "3",
+      "idUser": 3,
+      "idRecipe": 3,
+      "comentario": "El Biryani de Pollo es delicioso, un plato muy aromático.",
+      "estrellas": 5
+    },
+    {
+      "id": "4",
+      "idUser": 4,
+      "idRecipe": 4,
+      "comentario": "El Pão de Queijo es perfecto para el desayuno, me encantó.",
+      "estrellas": 4
+    },
+    {
+      "id": "5",
+      "idUser": 5,
+      "idRecipe": 5,
+      "comentario": "El sushi estaba fresco y bien preparado, lo recomendaría.",
+      "estrellas": 4.5
+    },
+    {
+      "id": "6",
+      "idUser": 6,
+      "idRecipe": 6,
+      "comentario": "El curry de garbanzos tiene un buen equilibrio de especias.",
+      "estrellas": 4
+    },
+    {
+      "id": "7",
+      "idUser": 1,
+      "idRecipe": 7,
+      "comentario": "La ensalada César fue muy fresca, pero el aderezo podría ser mejor.",
+      "estrellas": 3.5
+    },
+    {
+      "id": "8",
+      "idUser": 5,
+      "idRecipe": 8,
+      "comentario": "El ramen es reconfortante y delicioso, siempre lo elijo.",
+      "estrellas": 5
+    },
+    {
+      "id": "9",
+      "idUser": 5,
+      "idRecipe": 9,
+      "comentario": "La moussaka es rica, pero un poco pesada para mi gusto.",
+      "estrellas": 3
+    },
+    {
+      "id": "10",
+      "idUser": 4,
+      "idRecipe": 10,
+      "comentario": "La lasaña es muy sabrosa, perfecta para una cena familiar.",
+      "estrellas": 4.5
+    },
+    {
+      "id": "11",
+      "idUser": 5,
+      "idRecipe": 11,
+      "comentario": "El chili con carne tiene un buen picante, me encantó.",
+      "estrellas": 4
+    },
+    {
+      "id": "12",
+      "idUser": 6,
+      "idRecipe": 12,
+      "comentario": "El goulash es muy sustancioso, perfecto para el invierno.",
+      "estrellas": 5
+    },
+    {
+      "id": "13",
+      "idUser": 1,
+      "idRecipe": 13,
+      "comentario": "El ceviche es fresco y delicioso, me encanta la combinación.",
+      "estrellas": 5
+    },
+    {
+      "id": "14",
+      "idUser": 2,
+      "idRecipe": 14,
+      "comentario": "La pasta pesto es simple pero satisfactoria, un buen plato.",
+      "estrellas": 4
+    },
+    {
+      "id": "15",
+      "idUser": 3,
+      "idRecipe": 15,
+      "comentario": "La sopa de lentejas fue nutritiva y reconfortante.",
+      "estrellas": 4
+    },
+    {
+      "id": "16",
+      "idUser": 2,
+      "idRecipe": 16,
+      "comentario": "Los pancakes son esponjosos, perfectos con jarabe de arce.",
+      "estrellas": 4.5
+    },
+    {
+      "id": "17",
+      "idUser": 1,
+      "idRecipe": 17,
+      "comentario": "El falafel es crujiente y delicioso, una gran opción vegana.",
+      "estrellas": 4
+    },
+    {
+      "id": "18",
+      "idUser": 6,
+      "idRecipe": 18,
+      "comentario": "La bruschetta es fresca y ligera, ideal para un aperitivo.",
+      "estrellas": 4
+    },
+    {
+      "id": "19",
+      "idUser": 1,
+      "idRecipe": 19,
+      "comentario": "El pollo teriyaki estaba delicioso, muy bien marinado.",
+      "estrellas": 4.5
+    },
+    {
+      "id": "20",
+      "idUser": 2,
+      "idRecipe": 20,
+      "comentario": "La babka es dulce y perfecta con una taza de café.",
+      "estrellas": 5
+    },
+    {
+      "id": "21",
+      "idUser": 3,
+      "idRecipe": 21,
+      "comentario": "Las papas bravas son picantes y crujientes, un bocado perfecto.",
+      "estrellas": 4
+    },
+    {
+      "id": "22",
+      "idUser": 4,
+      "idRecipe": 22,
+      "comentario": "El carbonade flamande tiene un gran sabor a cerveza.",
+      "estrellas": 4
+    },
+    {
+      "id": "23",
+      "idUser": 5,
+      "idRecipe": 23,
+      "comentario": "La shakshuka es un desayuno delicioso, me encantó.",
+      "estrellas": 5
+    },
+    {
+      "id": "24",
+      "idUser": 3,
+      "idRecipe": 24,
+      "comentario": "El pudding de chía es delicioso y saludable.",
+      "estrellas": 4
+    },
+    {
+      "id": "25",
+      "idUser": 1,
+      "idRecipe": 20,
+      "comentario": "La babka me gusto.",
+      "estrellas": 4
+    },
+    {
+      "id": "d1ae",
+      "idUser": 1,
+      "idRecipe": 8,
+      "comentario": "Me gustó bastante",
+      "estrellas": 4.5
+    }
+  ],
+  "ingredientes": [
+    {
+      "id": "1",
+      "idRecipe": 1,
+      "nombre": "Carne de Cerdo (puede ser pierna o paleta)",
+      "cantidad": "1 kg"
+    },
+    {
+      "id": "2",
+      "idRecipe": 1,
+      "nombre": "Sal",
+      "cantidad": "1 cucharada"
+    },
+    {
+      "id": "3",
+      "idRecipe": 1,
+      "nombre": "Pimienta Molida",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "4",
+      "idRecipe": 1,
+      "nombre": "Comino",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "5",
+      "idRecipe": 1,
+      "nombre": "Orégano Seco",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "6",
+      "idRecipe": 1,
+      "nombre": "Ajos Finamente picados",
+      "cantidad": "2 dientes"
+    },
+    {
+      "id": "7",
+      "idRecipe": 1,
+      "nombre": "Cebolla cortada",
+      "cantidad": "1 unidad"
+    },
+    {
+      "id": "8",
+      "idRecipe": 1,
+      "nombre": "Laurel",
+      "cantidad": "2 hojas"
+    },
+    {
+      "id": "9",
+      "idRecipe": 1,
+      "nombre": "Caldo de Pollo o Agua",
+      "cantidad": "1 taza"
+    },
+    {
+      "id": "10",
+      "idRecipe": 1,
+      "nombre": "Tortilla de Maíz",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "11",
+      "idRecipe": 1,
+      "nombre": "Salsa Roja o Verde (Opcional)",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "12",
+      "idRecipe": 2,
+      "nombre": "Espaguetis",
+      "cantidad": "400 gramos"
+    },
+    {
+      "id": "13",
+      "idRecipe": 2,
+      "nombre": "Panceta",
+      "cantidad": "150 gramos"
+    },
+    {
+      "id": "14",
+      "idRecipe": 2,
+      "nombre": "Huevo",
+      "cantidad": "4 piezas"
+    },
+    {
+      "id": "15",
+      "idRecipe": 2,
+      "nombre": "Parmesano",
+      "cantidad": "100 gramos"
+    },
+    {
+      "id": "16",
+      "idRecipe": 2,
+      "nombre": "Pimienta negra",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "17",
+      "idRecipe": 2,
+      "nombre": "Sal",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "18",
+      "idRecipe": 3,
+      "nombre": "Arroz Basmati",
+      "cantidad": "300 gramos"
+    },
+    {
+      "id": "19",
+      "idRecipe": 3,
+      "nombre": "Pollo",
+      "cantidad": "500 gramos"
+    },
+    {
+      "id": "20",
+      "idRecipe": 3,
+      "nombre": "Yogur",
+      "cantidad": "200 gramos"
+    },
+    {
+      "id": "21",
+      "idRecipe": 3,
+      "nombre": "Especias Biryani",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "22",
+      "idRecipe": 3,
+      "nombre": "Cebolla",
+      "cantidad": "1 grande"
+    },
+    {
+      "id": "23",
+      "idRecipe": 3,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes"
+    },
+    {
+      "id": "24",
+      "idRecipe": 3,
+      "nombre": "Jengibre",
+      "cantidad": "1 trozo (2 cm)"
+    },
+    {
+      "id": "25",
+      "idRecipe": 3,
+      "nombre": "Cúrcuma",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "26",
+      "idRecipe": 3,
+      "nombre": "Garam masala",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "27",
+      "idRecipe": 3,
+      "nombre": "Chile en polvo",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "28",
+      "idRecipe": 3,
+      "nombre": "Sal",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "29",
+      "idRecipe": 3,
+      "nombre": "Menta fresca",
+      "cantidad": "Unas hojas"
+    },
+    {
+      "id": "30",
+      "idRecipe": 3,
+      "nombre": "Cilantro fresco",
+      "cantidad": "Unas hojas"
+    },
+    {
+      "id": "31",
+      "idRecipe": 4,
+      "nombre": "Leche",
+      "cantidad": "100 ml"
+    },
+    {
+      "id": "32",
+      "idRecipe": 4,
+      "nombre": "Queso",
+      "cantidad": "200 gramos"
+    },
+    {
+      "id": "33",
+      "idRecipe": 4,
+      "nombre": "Huevo",
+      "cantidad": "2 piezas"
+    },
+    {
+      "id": "34",
+      "idRecipe": 4,
+      "nombre": "Almidón de yuca",
+      "cantidad": "250 g"
+    },
+    {
+      "id": "35",
+      "idRecipe": 4,
+      "nombre": "Aceite",
+      "cantidad": "50 ml"
+    },
+    {
+      "id": "36",
+      "idRecipe": 4,
+      "nombre": "Sal",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "37",
+      "idRecipe": 5,
+      "nombre": "Arroz para Sushi",
+      "cantidad": "500 gramos"
+    },
+    {
+      "id": "38",
+      "idRecipe": 5,
+      "nombre": "Pescado (salmón, atún, etc.)",
+      "cantidad": "200 gramos"
+    },
+    {
+      "id": "39",
+      "idRecipe": 5,
+      "nombre": "Alga Nori",
+      "cantidad": "5 hojas"
+    },
+    {
+      "id": "40",
+      "idRecipe": 5,
+      "nombre": "Vinagre de Arroz",
+      "cantidad": "4 cucharadas"
+    },
+    {
+      "id": "41",
+      "idRecipe": 5,
+      "nombre": "Azúcar",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "42",
+      "idRecipe": 5,
+      "nombre": "Sal",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "43",
+      "idRecipe": 5,
+      "nombre": "Verduras (aguacate, pepino, etc.)",
+      "cantidad": "150 g"
+    },
+    {
+      "id": "44",
+      "idRecipe": 5,
+      "nombre": "Wasabi",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "45",
+      "idRecipe": 5,
+      "nombre": "Salsa de soja",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "46",
+      "idRecipe": 6,
+      "nombre": "Garbanzos cocidos",
+      "cantidad": "400 gramos"
+    },
+    {
+      "id": "47",
+      "idRecipe": 6,
+      "nombre": "Cebolla",
+      "cantidad": "1 pieza"
+    },
+    {
+      "id": "48",
+      "idRecipe": 6,
+      "nombre": "Curry en polvo",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "49",
+      "idRecipe": 6,
+      "nombre": "Leche de coco",
+      "cantidad": "400 ml"
+    },
+    {
+      "id": "50",
+      "idRecipe": 6,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes"
+    },
+    {
+      "id": "51",
+      "idRecipe": 6,
+      "nombre": "Jengibre",
+      "cantidad": "1 trozo (2 cm)"
+    },
+    {
+      "id": "52",
+      "idRecipe": 6,
+      "nombre": "Cúrcuma",
+      "cantidad": "1 cucharada"
+    },
+    {
+      "id": "53",
+      "idRecipe": 6,
+      "nombre": "Comino en polvo",
+      "cantidad": "1 cucharada"
+    },
+    {
+      "id": "54",
+      "idRecipe": 6,
+      "nombre": "Garam masala",
+      "cantidad": "1 cucharada"
+    },
+    {
+      "id": "55",
+      "idRecipe": 6,
+      "nombre": "Tomate",
+      "cantidad": "1 grande"
+    },
+    {
+      "id": "56",
+      "idRecipe": 6,
+      "nombre": "Sal",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "57",
+      "idRecipe": 6,
+      "nombre": "Cilantro fresco",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "58",
+      "idRecipe": 7,
+      "nombre": "Lechuga Romana",
+      "cantidad": "1 cabeza"
+    },
+    {
+      "id": "59",
+      "idRecipe": 7,
+      "nombre": "Pollo a la parrilla",
+      "cantidad": "200 gramos"
+    },
+    {
+      "id": "60",
+      "idRecipe": 7,
+      "nombre": "Aderezo César",
+      "cantidad": "50 ml"
+    },
+    {
+      "id": "61",
+      "idRecipe": 7,
+      "nombre": "Crutones",
+      "cantidad": "1 taza"
+    },
+    {
+      "id": "62",
+      "idRecipe": 7,
+      "nombre": "Queso parmesano",
+      "cantidad": "1/2 taza, rallado"
+    },
+    {
+      "id": "63",
+      "idRecipe": 7,
+      "nombre": "Pimienta negra",
+      "cantidad": "Al gusto"
+    },
+    {
+      "id": "64",
+      "idRecipe": 8,
+      "nombre": "Fideos ramen",
+      "cantidad": "200 gramos"
+    },
+    {
+      "id": "65",
+      "idRecipe": 8,
+      "nombre": "Caldo de Pollo",
+      "cantidad": "800 ml"
+    },
+    {
+      "id": "66",
+      "idRecipe": 8,
+      "nombre": "Pechuga de pollo",
+      "cantidad": "1 cocida y en rodajas"
+    },
+    {
+      "id": "67",
+      "idRecipe": 8,
+      "nombre": "Huevo",
+      "cantidad": "2 cocidos (huevo marinado si es posible)"
+    },
+    {
+      "id": "68",
+      "idRecipe": 8,
+      "nombre": "Cebolla verde",
+      "cantidad": "2 picadas"
+    },
+    {
+      "id": "69",
+      "idRecipe": 8,
+      "nombre": "Algas nori",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "70",
+      "idRecipe": 8,
+      "nombre": "Salsa de soja",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "71",
+      "idRecipe": 8,
+      "nombre": "Jengibre",
+      "cantidad": "1 trozo, rallado"
+    },
+    {
+      "id": "72",
+      "idRecipe": 8,
+      "nombre": "Aceite de sésamo",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "73",
+      "idRecipe": 9,
+      "nombre": "Berenjenas",
+      "cantidad": "2 grandes, en rodajas"
+    },
+    {
+      "id": "74",
+      "idRecipe": 9,
+      "nombre": "Carne de cordero molida",
+      "cantidad": "500 g"
+    },
+    {
+      "id": "75",
+      "idRecipe": 9,
+      "nombre": "Cebolla",
+      "cantidad": "1 picada"
+    },
+    {
+      "id": "76",
+      "idRecipe": 9,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes, picados"
+    },
+    {
+      "id": "77",
+      "idRecipe": 9,
+      "nombre": "Tomate",
+      "cantidad": "400 g, triturado"
+    },
+    {
+      "id": "78",
+      "idRecipe": 9,
+      "nombre": "Puré de tomate",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "79",
+      "idRecipe": 9,
+      "nombre": "Canela en polvo",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "80",
+      "idRecipe": 9,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "81",
+      "idRecipe": 9,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "82",
+      "idRecipe": 9,
+      "nombre": "Aceite de oliva",
+      "cantidad": "3 cucharadas"
+    },
+    {
+      "id": "83",
+      "idRecipe": 9,
+      "nombre": "Leche",
+      "cantidad": "500 ml"
+    },
+    {
+      "id": "84",
+      "idRecipe": 9,
+      "nombre": "Harina",
+      "cantidad": "50 g"
+    },
+    {
+      "id": "85",
+      "idRecipe": 9,
+      "nombre": "Mantequilla",
+      "cantidad": "50 g"
+    },
+    {
+      "id": "86",
+      "idRecipe": 9,
+      "nombre": "Queso parmesano",
+      "cantidad": "100 g rallado"
+    },
+    {
+      "id": "87",
+      "idRecipe": 9,
+      "nombre": "Huevo",
+      "cantidad": "1 batido"
+    },
+    {
+      "id": "88",
+      "idRecipe": 10,
+      "nombre": "Láminas de lasaña",
+      "cantidad": "9 unidades"
+    },
+    {
+      "id": "89",
+      "idRecipe": 10,
+      "nombre": "Carne molida",
+      "cantidad": "500 gramos"
+    },
+    {
+      "id": "90",
+      "idRecipe": 10,
+      "nombre": "Passata de tomate",
+      "cantidad": "500 ml"
+    },
+    {
+      "id": "91",
+      "idRecipe": 10,
+      "nombre": "Cebolla",
+      "cantidad": "1 picada"
+    },
+    {
+      "id": "92",
+      "idRecipe": 10,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes, picados"
+    },
+    {
+      "id": "93",
+      "idRecipe": 10,
+      "nombre": "Orégano seco",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "94",
+      "idRecipe": 10,
+      "nombre": "Albahaca seca",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "95",
+      "idRecipe": 10,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "96",
+      "idRecipe": 10,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "97",
+      "idRecipe": 10,
+      "nombre": "Aceite de oliva",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "98",
+      "idRecipe": 10,
+      "nombre": "Queso mozzarella",
+      "cantidad": "300 g rallado"
+    },
+    {
+      "id": "99",
+      "idRecipe": 10,
+      "nombre": "Queso parmesano",
+      "cantidad": "100 g rallado"
+    },
+    {
+      "id": "100",
+      "idRecipe": 10,
+      "nombre": "Huevo",
+      "cantidad": "1"
+    },
+    {
+      "id": "101",
+      "idRecipe": 11,
+      "nombre": "Carne molida de res",
+      "cantidad": "400 gramos"
+    },
+    {
+      "id": "102",
+      "idRecipe": 11,
+      "nombre": "Cebolla",
+      "cantidad": "1 picada"
+    },
+    {
+      "id": "103",
+      "idRecipe": 11,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes picados"
+    },
+    {
+      "id": "104",
+      "idRecipe": 11,
+      "nombre": "Pimiento rojo",
+      "cantidad": "1 picado"
+    },
+    {
+      "id": "105",
+      "idRecipe": 11,
+      "nombre": "Tomate triturado",
+      "cantidad": "800 g"
+    },
+    {
+      "id": "106",
+      "idRecipe": 11,
+      "nombre": "Frijoles rojos (cocidos)",
+      "cantidad": "400 g"
+    },
+    {
+      "id": "107",
+      "idRecipe": 11,
+      "nombre": "Pasta de tomate",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "108",
+      "idRecipe": 11,
+      "nombre": "Comino",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "109",
+      "idRecipe": 11,
+      "nombre": "Pimentón ahumado",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "110",
+      "idRecipe": 11,
+      "nombre": "Cayena",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "111",
+      "idRecipe": 11,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "112",
+      "idRecipe": 11,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "113",
+      "idRecipe": 11,
+      "nombre": "Aceite de oliva",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "114",
+      "idRecipe": 11,
+      "nombre": "Cilantro fresco",
+      "cantidad": "para decorar"
+    },
+    {
+      "id": "115",
+      "idRecipe": 12,
+      "nombre": "Carne de res (cortada en cubos)",
+      "cantidad": "1 kg"
+    },
+    {
+      "id": "116",
+      "idRecipe": 12,
+      "nombre": "Cebolla",
+      "cantidad": "2 piezas"
+    },
+    {
+      "id": "117",
+      "idRecipe": 12,
+      "nombre": "Ajo",
+      "cantidad": "3 dientes picados"
+    },
+    {
+      "id": "118",
+      "idRecipe": 12,
+      "nombre": "Pimiento rojo",
+      "cantidad": "1 picado"
+    },
+    {
+      "id": "119",
+      "idRecipe": 12,
+      "nombre": "Pimiento verde",
+      "cantidad": "1 picado"
+    },
+    {
+      "id": "120",
+      "idRecipe": 12,
+      "nombre": "Tomate triturado",
+      "cantidad": "400 g"
+    },
+    {
+      "id": "121",
+      "idRecipe": 12,
+      "nombre": "Caldo de carne",
+      "cantidad": "1 l"
+    },
+    {
+      "id": "122",
+      "idRecipe": 12,
+      "nombre": "Pimentón dulce",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "123",
+      "idRecipe": 12,
+      "nombre": "Comino",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "124",
+      "idRecipe": 12,
+      "nombre": "Laurel",
+      "cantidad": "2 hojas"
+    },
+    {
+      "id": "125",
+      "idRecipe": 12,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "126",
+      "idRecipe": 12,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "127",
+      "idRecipe": 12,
+      "nombre": "Aceite de oliva",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "128",
+      "idRecipe": 12,
+      "nombre": "Pasta (opcional, para acompañar)",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "129",
+      "idRecipe": 13,
+      "nombre": "Pescado fresco (como corvina o tilapia)",
+      "cantidad": "500 g cortado en cubos"
+    },
+    {
+      "id": "130",
+      "idRecipe": 13,
+      "nombre": "Limones",
+      "cantidad": "4 su jugo"
+    },
+    {
+      "id": "131",
+      "idRecipe": 13,
+      "nombre": "Cebolla roja",
+      "cantidad": "1 en rodajas finas"
+    },
+    {
+      "id": "132",
+      "idRecipe": 13,
+      "nombre": "Tomate",
+      "cantidad": "1 picado"
+    },
+    {
+      "id": "133",
+      "idRecipe": 13,
+      "nombre": "Cilantro fresco",
+      "cantidad": "un puñado picado"
+    },
+    {
+      "id": "134",
+      "idRecipe": 13,
+      "nombre": "Ají (chile)",
+      "cantidad": "al gusto picado"
+    },
+    {
+      "id": "135",
+      "idRecipe": 13,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "136",
+      "idRecipe": 13,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "137",
+      "idRecipe": 13,
+      "nombre": "Aguacate (opcional)",
+      "cantidad": "1 en rodajas"
+    },
+    {
+      "id": "138",
+      "idRecipe": 14,
+      "nombre": "Pasta (tipo espagueti o tu elección)",
+      "cantidad": "400 g"
+    },
+    {
+      "id": "139",
+      "idRecipe": 14,
+      "nombre": "Albahaca fresca",
+      "cantidad": "2 tazas en hojas"
+    },
+    {
+      "id": "140",
+      "idRecipe": 14,
+      "nombre": "Piñones",
+      "cantidad": "1/3 taza"
+    },
+    {
+      "id": "141",
+      "idRecipe": 14,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes"
+    },
+    {
+      "id": "142",
+      "idRecipe": 14,
+      "nombre": "Queso parmesano",
+      "cantidad": "1/2 taza rallado"
+    },
+    {
+      "id": "143",
+      "idRecipe": 14,
+      "nombre": "Aceite de oliva",
+      "cantidad": "1/2 taza"
+    },
+    {
+      "id": "144",
+      "idRecipe": 14,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "145",
+      "idRecipe": 14,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "146",
+      "idRecipe": 15,
+      "nombre": "Lentejas",
+      "cantidad": "1 taza"
+    },
+    {
+      "id": "147",
+      "idRecipe": 15,
+      "nombre": "Cebolla",
+      "cantidad": "1, picada"
+    },
+    {
+      "id": "148",
+      "idRecipe": 15,
+      "nombre": "Zanahoria",
+      "cantidad": "1 picada"
+    },
+    {
+      "id": "149",
+      "idRecipe": 15,
+      "nombre": "Apio",
+      "cantidad": "1 rama picada"
+    },
+    {
+      "id": "150",
+      "idRecipe": 15,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes picados"
+    },
+    {
+      "id": "151",
+      "idRecipe": 15,
+      "nombre": "Caldo de verduras o agua",
+      "cantidad": "4 tazas"
+    },
+    {
+      "id": "152",
+      "idRecipe": 15,
+      "nombre": "Tomate (opcional)",
+      "cantidad": "1 picado"
+    },
+    {
+      "id": "153",
+      "idRecipe": 15,
+      "nombre": "Comino",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "154",
+      "idRecipe": 15,
+      "nombre": "Laurel",
+      "cantidad": "1 hoja"
+    },
+    {
+      "id": "155",
+      "idRecipe": 15,
+      "nombre": "Aceite de oliva",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "156",
+      "idRecipe": 15,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "157",
+      "idRecipe": 15,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "158",
+      "idRecipe": 16,
+      "nombre": "Harina de trigo",
+      "cantidad": "1 taza"
+    },
+    {
+      "id": "159",
+      "idRecipe": 16,
+      "nombre": "Leche",
+      "cantidad": "1 taza"
+    },
+    {
+      "id": "160",
+      "idRecipe": 16,
+      "nombre": "Huevo",
+      "cantidad": "1 grande"
+    },
+    {
+      "id": "161",
+      "idRecipe": 16,
+      "nombre": "Azúcar",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "162",
+      "idRecipe": 16,
+      "nombre": "Polvo de hornear",
+      "cantidad": "2 cucharaditas"
+    },
+    {
+      "id": "163",
+      "idRecipe": 16,
+      "nombre": "Sal",
+      "cantidad": "1/2 cucharadita"
+    },
+    {
+      "id": "164",
+      "idRecipe": 16,
+      "nombre": "Mantequilla derretida",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "165",
+      "idRecipe": 16,
+      "nombre": "Extracto de vainilla",
+      "cantidad": "1 cucharadita (opcional)"
+    },
+    {
+      "id": "166",
+      "idRecipe": 17,
+      "nombre": "Garbanzos secos",
+      "cantidad": "1 taza"
+    },
+    {
+      "id": "167",
+      "idRecipe": 17,
+      "nombre": "Cebolla",
+      "cantidad": "1 picada"
+    },
+    {
+      "id": "168",
+      "idRecipe": 17,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes picados"
+    },
+    {
+      "id": "169",
+      "idRecipe": 17,
+      "nombre": "Perejil fresco",
+      "cantidad": "1/4 taza picado"
+    },
+    {
+      "id": "170",
+      "idRecipe": 17,
+      "nombre": "Cilantro fresco",
+      "cantidad": "1/4 taza picado"
+    },
+    {
+      "id": "171",
+      "idRecipe": 17,
+      "nombre": "Comino molido",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "172",
+      "idRecipe": 17,
+      "nombre": "Cilantro molido",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "173",
+      "idRecipe": 17,
+      "nombre": "Bicarbonato de sodio",
+      "cantidad": "1/2 cucharadita"
+    },
+    {
+      "id": "174",
+      "idRecipe": 17,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "175",
+      "idRecipe": 17,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "176",
+      "idRecipe": 17,
+      "nombre": "Aceite para freír",
+      "cantidad": "suficiente para freír"
+    },
+    {
+      "id": "177",
+      "idRecipe": 18,
+      "nombre": "Pan baguette o ciabatta",
+      "cantidad": "1 cortado en rebanadas"
+    },
+    {
+      "id": "178",
+      "idRecipe": 18,
+      "nombre": "Tomates maduros",
+      "cantidad": "2-3 cortados en cubos"
+    },
+    {
+      "id": "179",
+      "idRecipe": 18,
+      "nombre": "Albahaca fresca",
+      "cantidad": "un puñado picada"
+    },
+    {
+      "id": "180",
+      "idRecipe": 18,
+      "nombre": "Ajo",
+      "cantidad": "1 diente cortado por la mitad"
+    },
+    {
+      "id": "181",
+      "idRecipe": 18,
+      "nombre": "Aceite de oliva virgen extra",
+      "cantidad": "2-3 cucharadas"
+    },
+    {
+      "id": "182",
+      "idRecipe": 18,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "183",
+      "idRecipe": 18,
+      "nombre": "Pimienta negra",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "184",
+      "idRecipe": 19,
+      "nombre": "Pechugas de pollo",
+      "cantidad": "500 g en trozos o filetes"
+    },
+    {
+      "id": "185",
+      "idRecipe": 19,
+      "nombre": "Salsa de soja",
+      "cantidad": "1/4 taza"
+    },
+    {
+      "id": "186",
+      "idRecipe": 19,
+      "nombre": "Miel o azúcar moreno",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "187",
+      "idRecipe": 19,
+      "nombre": "Vinagre de arroz",
+      "cantidad": "1 cucharada"
+    },
+    {
+      "id": "188",
+      "idRecipe": 19,
+      "nombre": "Jengibre fresco",
+      "cantidad": "1 cucharadita rallado"
+    },
+    {
+      "id": "189",
+      "idRecipe": 19,
+      "nombre": "Ajo",
+      "cantidad": "1 diente picado"
+    },
+    {
+      "id": "190",
+      "idRecipe": 19,
+      "nombre": "Aceite de sésamo",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "191",
+      "idRecipe": 19,
+      "nombre": "Cebollín",
+      "cantidad": "para decorar picado"
+    },
+    {
+      "id": "192",
+      "idRecipe": 19,
+      "nombre": "Arroz",
+      "cantidad": "para servir (opcional)"
+    },
+    {
+      "id": "193",
+      "idRecipe": 20,
+      "nombre": "Harina de trigo",
+      "cantidad": "500 g"
+    },
+    {
+      "id": "194",
+      "idRecipe": 20,
+      "nombre": "Leche",
+      "cantidad": "250 ml tibia"
+    },
+    {
+      "id": "195",
+      "idRecipe": 20,
+      "nombre": "Azúcar",
+      "cantidad": "75 g"
+    },
+    {
+      "id": "196",
+      "idRecipe": 20,
+      "nombre": "Mantequilla",
+      "cantidad": "100 g derretida"
+    },
+    {
+      "id": "197",
+      "idRecipe": 20,
+      "nombre": "Huevos",
+      "cantidad": "2"
+    },
+    {
+      "id": "198",
+      "idRecipe": 20,
+      "nombre": "Levadura seca",
+      "cantidad": "7 g"
+    },
+    {
+      "id": "199",
+      "idRecipe": 20,
+      "nombre": "Sal",
+      "cantidad": "1/2 cucharadita"
+    },
+    {
+      "id": "200",
+      "idRecipe": 20,
+      "nombre": "Chocolate negro (o canela)",
+      "cantidad": "150 g rallado o en trozos"
+    },
+    {
+      "id": "201",
+      "idRecipe": 20,
+      "nombre": "Nueces (opcional)",
+      "cantidad": "50 g picadas"
+    },
+    {
+      "id": "202",
+      "idRecipe": 20,
+      "nombre": "Azúcar glas",
+      "cantidad": "para decorar (opcional)"
+    },
+    {
+      "id": "203",
+      "idRecipe": 21,
+      "nombre": "Papas",
+      "cantidad": "500 g peladas y cortadas en cubos"
+    },
+    {
+      "id": "204",
+      "idRecipe": 21,
+      "nombre": "Aceite de oliva",
+      "cantidad": "para freír"
+    },
+    {
+      "id": "205",
+      "idRecipe": 21,
+      "nombre": "Sal",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "206",
+      "idRecipe": 21,
+      "nombre": "Pimentón dulce",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "207",
+      "idRecipe": 21,
+      "nombre": "Pimiento picante (opcional)",
+      "cantidad": "1/2 cucharadita"
+    },
+    {
+      "id": "208",
+      "idRecipe": 21,
+      "nombre": "Vinagre",
+      "cantidad": "1 cucharadita (opcional)"
+    },
+    {
+      "id": "209",
+      "idRecipe": 21,
+      "nombre": "Mayonesa",
+      "cantidad": "para servir (opcional)"
+    },
+    {
+      "id": "210",
+      "idRecipe": 22,
+      "nombre": "Carne de res (músculo o paleta)",
+      "cantidad": "1 kg cortada en trozos"
+    },
+    {
+      "id": "211",
+      "idRecipe": 22,
+      "nombre": "Cebollas",
+      "cantidad": "3 cortadas en rodajas"
+    },
+    {
+      "id": "212",
+      "idRecipe": 22,
+      "nombre": "Cerveza oscura (como cerveza de abadía)",
+      "cantidad": "500 ml"
+    },
+    {
+      "id": "213",
+      "idRecipe": 22,
+      "nombre": "Caldo de carne",
+      "cantidad": "200 ml"
+    },
+    {
+      "id": "214",
+      "idRecipe": 22,
+      "nombre": "Mostaza",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "215",
+      "idRecipe": 22,
+      "nombre": "Azúcar moreno",
+      "cantidad": "1 cucharada"
+    },
+    {
+      "id": "216",
+      "idRecipe": 22,
+      "nombre": "Tomillo",
+      "cantidad": "1 ramita"
+    },
+    {
+      "id": "217",
+      "idRecipe": 22,
+      "nombre": "Hoja de laurel",
+      "cantidad": "1 hoja"
+    },
+    {
+      "id": "218",
+      "idRecipe": 22,
+      "nombre": "Aceite de oliva",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "219",
+      "idRecipe": 22,
+      "nombre": "Sal y pimienta",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "220",
+      "idRecipe": 23,
+      "nombre": "Aceite de oliva",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "221",
+      "idRecipe": 23,
+      "nombre": "Cebolla",
+      "cantidad": "1 picada"
+    },
+    {
+      "id": "222",
+      "idRecipe": 23,
+      "nombre": "Pimiento rojo",
+      "cantidad": "1 picado"
+    },
+    {
+      "id": "223",
+      "idRecipe": 23,
+      "nombre": "Ajo",
+      "cantidad": "2 dientes picados"
+    },
+    {
+      "id": "224",
+      "idRecipe": 23,
+      "nombre": "Tomates pelados (enlatados)",
+      "cantidad": "400 g"
+    },
+    {
+      "id": "225",
+      "idRecipe": 23,
+      "nombre": "Pimiento picante (opcional)",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "226",
+      "idRecipe": 23,
+      "nombre": "Comino en polvo",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "227",
+      "idRecipe": 23,
+      "nombre": "Paprika",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "228",
+      "idRecipe": 23,
+      "nombre": "Sal y pimienta",
+      "cantidad": "al gusto"
+    },
+    {
+      "id": "229",
+      "idRecipe": 23,
+      "nombre": "Huevos",
+      "cantidad": "4"
+    },
+    {
+      "id": "230",
+      "idRecipe": 23,
+      "nombre": "Perejil o cilantro fresco",
+      "cantidad": "para decorar al gusto"
+    },
+    {
+      "id": "231",
+      "idRecipe": 24,
+      "nombre": "Semillas de chía",
+      "cantidad": "1/4 taza"
+    },
+    {
+      "id": "232",
+      "idRecipe": 24,
+      "nombre": "Leche (puede ser de vaca, almendra, coco, etc.)",
+      "cantidad": "1 taza"
+    },
+    {
+      "id": "233",
+      "idRecipe": 24,
+      "nombre": "Miel o jarabe de arce (opcional)",
+      "cantidad": "2 cucharadas"
+    },
+    {
+      "id": "234",
+      "idRecipe": 24,
+      "nombre": "Extracto de vainilla",
+      "cantidad": "1 cucharadita"
+    },
+    {
+      "id": "235",
+      "idRecipe": 24,
+      "nombre": "Frutas frescas (como fresas, plátanos, o mango)",
+      "cantidad": "para decorar, al gusto"
+    },
+    {
+      "id": "236",
+      "idRecipe": 24,
+      "nombre": "Frutos secos o granola (opcional)",
+      "cantidad": "para decorar al gusto"
+    }
+  ]
+}
