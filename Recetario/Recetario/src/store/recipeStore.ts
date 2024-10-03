@@ -30,19 +30,19 @@ const useRecipeStore = defineStore('recipe', {
   }),  
   actions: {  
     async fetchRecipes() {  
-      const response = await axios.get('http://localhost:3000/recipe');  
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe`);  
       this.recipes = response.data;  
     },   
     async fetchRecipebyId(id: number | string) {
-        const response = await axios.get(`http://localhost:3000/recipe/${id}`);  
+        const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe/${id}`);  
         this.recipes = response.data;  
         return this.recipes
     }, 
     async fetchRecipebyUsers() {
-      const response = await axios.get(`http://localhost:3000/recipe`);  
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe`);  
       const user = localStorage.getItem('currentUser');
-      const reviewsResponse = await axios.get(`http://localhost:3000/reseñas`);
-      const usersResponse = await axios.get(`http://localhost:3000/users`);
+      const reviewsResponse = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas`);
+      const usersResponse = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users`);
       const reviews = reviewsResponse.data;
       const usersRecipe = usersResponse.data;
       const filteredArray = response.data.filter(obj => obj.idUser !== Number(JSON.parse(user).id));
@@ -59,21 +59,21 @@ const useRecipeStore = defineStore('recipe', {
       return array;
     }, 
     async fetchRecipebyUserId(id: number | string) {  
-        const response = await axios.get(`http://localhost:3000/recipe?idUser=${id}`);  
+        const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe?idUser=${id}`);  
         this.recipes = response.data;  
         return this.recipes
     }, 
     async updateRecipe(recipe: Recipe) {  
-        await axios.put(`http://localhost:3000/recipe/${recipe.id}`, recipe);  
+        await axios.put(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe/${recipe.id}`, recipe);  
         this.fetchRecipes();  
     },  
     async deleteRecipe(id: number) {  
-        await axios.delete(`http://localhost:3000/recipe/${id}`);  
+        await axios.delete(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe/${id}`);  
         this.fetchRecipes();  
     },  
     async addRecipe(recipe: Partial<Recipe>) {
       console.log('llega', recipe)  
-      const response = await axios.post('http://localhost:3000/recipe', recipe);  
+      const response = await axios.post(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe`, recipe);  
       return response.data 
     }, 
   },  

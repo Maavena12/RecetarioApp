@@ -8,36 +8,36 @@ const useReviewStore = defineStore('review', {
   }),  
   actions: {  
     async fetchReviews() {  
-      const response = await axios.get('http://localhost:3000/reseñas');  
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas`);  
       this.reviews = response.data;  
     },  
     async fetchReviewsbyId(id: number | string) {  
-        const response = await axios.get(`http://localhost:3000/reseñas?idRecipe=${id}`);  
+        const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas?idRecipe=${id}`);  
         this.reviews = response.data;  
         return this.reviews
     }, 
     async fetchReviewsbyUserId(id: number | string) {  
-      const response = await axios.get(`http://localhost:3000/reseñas?idUser=${id}`);  
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas?idUser=${id}`);  
       this.reviews = response.data;  
       return this.reviews
   }, 
     async updateReviews(review: Review) {  
-        await axios.put(`http://localhost:3000/reseñas/${review.id}`, review);  
+        await axios.put(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas/${review.id}`, review);  
         this.fetchReviews();  
     },  
     async deleteReview(id: number) {  
-        await axios.delete(`http://localhost:3000/reseñas/${id}`);  
+        await axios.delete(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas/${id}`);  
         this.fetchReviews();  
     },  
     async deleteReviewByUser(id: number) {
-      const response = await axios.get(`http://localhost:3000/reseñas?idUser=${id}`);
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas?idUser=${id}`);
       for (const review of response.data) {  
-        await axios.delete(`http://localhost:3000/reseñas/${review.id}`); 
+        await axios.delete(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas/${review.id}`); 
       }   
       this.fetchReviews();  
     },  
     async addReview(review: Partial<Review[]>) {
-        await axios.post('http://localhost:3000/reseñas', review); 
+        await axios.post(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas`, review); 
         this.fetchReviews();   
     }, 
   },  

@@ -9,21 +9,21 @@ const useUserStore = defineStore('user', {
   }),  
   actions: {  
     async fetchUsers() {  
-      const response = await axios.get('http://localhost:3000/users');  
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users`);  
       this.users = response.data;  
     },  
     async fetchUser(id: number | string) {
-      const response = await axios.get(`http://localhost:3000/users/${id}`);  
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users/${id}`);  
       this.users = response.data; 
       return response.data 
     },
     async updateUser(user: Partial<user>) {  
-      const response = await axios.get('http://localhost:3000/users');
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users`);
       const allUsers = response.data
       const equalName = allUsers.find(users => users.nombreUsuario === user.nombreUsuario && users.id !== user.id)
       const equalEmail = allUsers.find(users => users.correo === user.correo && users.id !== user.id)
       if (equalName === undefined && equalEmail === undefined){
-        await axios.put(`http://localhost:3000/users/${user.id}`, user);  
+        await axios.put(`${import.meta.env.VITE_JSON_SERVER_URL}/users/${user.id}`, user);  
         this.loadSession()
         this.fetchUsers(); 
         return true;
@@ -38,16 +38,16 @@ const useUserStore = defineStore('user', {
       }
     },  
     async deleteUser(id: number) {  
-      await axios.delete(`http://localhost:3000/users/${id}`);  
+      await axios.delete(`${import.meta.env.VITE_JSON_SERVER_URL}/users/${id}`);  
       this.fetchUsers();  
     },  
     async register(user: Partial<user>) {  
-      const response = await axios.post('http://localhost:3000/users', user);  
+      const response = await axios.post(`${import.meta.env.VITE_JSON_SERVER_URL}/users`, user);  
       this.users.push(response.data);  
       this.currentUser = response.data;
     },  
     async login(email: string, password: string) {  
-      const response = await axios.get('http://localhost:3000/users', {  
+      const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users`, {  
         params: { email, password },  
       });  
       const authenticatedUsers = response.data.filter(user => 

@@ -42,7 +42,7 @@
       "apellido": "Hernández",
       "nombreUsuario": "luish",
       "correo": "luis.hernandez@example.com",
-      "contraseña": "pass777",
+      "password": "pass777",
       "image": "https://cdn-icons-png.flaticon.com/512/11320/11320006.png"
     },
     {
