@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test:e2e": "cypress run",
     "test:unit": "vitest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
     "@capacitor/android": "6.1.2",
