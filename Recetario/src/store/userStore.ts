@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia';  
 import axios from 'axios';  
-import { user } from '@/interface/user';
+import { User } from '@/interface/user';
 
 interface UserStoreState {  
-  users: user[]; // Asegúrate de que users sea un array de user  
-  currentUser: user | null;  
+  users: User[]; // Asegúrate de que users sea un array de user  
+  currentUser: User | null;  
 } 
 
 const useUserStore = defineStore('user', {  
@@ -22,7 +22,7 @@ const useUserStore = defineStore('user', {
       this.users = response.data; 
       return response.data 
     },
-    async updateUser(user: Partial<user>) {  
+    async updateUser(user: Partial<User>) {  
       const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users`);
       const allUsers = response.data
       const equalName = allUsers.find((users: { nombreUsuario: string | undefined; id: number | undefined; }) => users.nombreUsuario === user.nombreUsuario && users.id !== user.id)
@@ -46,7 +46,7 @@ const useUserStore = defineStore('user', {
       await axios.delete(`${import.meta.env.VITE_JSON_SERVER_URL}/users/${id}`);  
       this.fetchUsers();  
     },  
-    async register(user: Partial<user>) {  
+    async register(user: Partial<User>) {  
       const response = await axios.post(`${import.meta.env.VITE_JSON_SERVER_URL}/users`, user);  
       this.users.push(response.data);  
       this.currentUser = response.data;
