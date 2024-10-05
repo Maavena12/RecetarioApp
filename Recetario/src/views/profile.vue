@@ -7,7 +7,7 @@
         <p class="post-count">{{ number }} publicaciones</p>
       </div>
       <button @click="addRecipe" class="add-recipe-button">+ Agregar Receta</button>
-      <i @click="toggleSidebar" class="fas fa-cog"></i>
+      <i @click="toggleSidebar" style="color: black;" class="fas fa-cog"></i>
     </div>
 
     <Modal :isOpen="showModal" :user="userLog" @close="closeModal"></Modal>
