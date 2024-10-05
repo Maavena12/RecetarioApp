@@ -1,7 +1,7 @@
 <template>
   <ion-content>
     <div class="profile-header">
-      <img @click="openModal" :src="user.image" class="profile-avatar" alt="Avatar">
+      <img @click="openModal" :src="image" class="profile-avatar" alt="Avatar">
       <div class="profile-info">
         <h2 class="username">{{ user.userName }}</h2>
         <p class="post-count">{{ number }} publicaciones</p>
@@ -51,6 +51,7 @@
   import UpdateModal from '../views/UpdateModal.vue';
   import useReviewStore from '@/store/reviewsStore';
   import useIngredientStore from '@/store/ingredientStore';
+import { Review } from '@/interface/review';
     
   const recipeStore = useRecipeStore();
   const userStore = useUserStore();
@@ -66,9 +67,14 @@
   const showModal = ref(false)
   const showUpdateModal = ref(false)
   const userLog = ref()
+  const image = ref('')
 
-  onMounted(async () => {  
-    userLog.value = JSON.parse(localStorage.getItem('currentUser'));
+  onMounted(async () => { 
+    const logInUser = localStorage.getItem('currentUser')
+    image.value = user.image as string
+    if (logInUser){
+      userLog.value = JSON.parse(logInUser);
+    }
     recipe.value = await recipeStore.fetchRecipebyUserId(Number(user.id))
     number.value = (await recipe.value).length
   });
@@ -103,7 +109,7 @@
       await ingredientStore.deleteIngredientByRecipe(recipe.value[i].id)
       await recipeStore.deleteRecipe(recipe.value[i].id)
     }
-    const review = await reviewStore.fetchReviewsbyUserId(userLog.value.id)
+    const review: Review[] = await reviewStore.fetchReviewsbyUserId(userLog.value.id)
     for(let i = 0; review.length > i; i++){
       await reviewStore.deleteReviewByUser(review[i].idUser)
     }

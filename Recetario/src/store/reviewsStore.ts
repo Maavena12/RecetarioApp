@@ -36,9 +36,9 @@ const useReviewStore = defineStore('review', {
       }   
       this.fetchReviews();  
     },  
-    async addReview(review: Partial<Review[]>) {
-        await axios.post(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas`, review); 
-        this.fetchReviews();   
+    async addReview(review: Partial<Review>) {
+      await axios.post(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas`, review); 
+      this.fetchReviews();   
     }, 
   },  
 });

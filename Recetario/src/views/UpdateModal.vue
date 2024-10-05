@@ -34,7 +34,7 @@
               style="display: none"  
               ref="fileInput"  
             />  
-            <IonButton @click="fileInput.click()">Seleccionar Imagen</IonButton>  
+            <IonButton @click="handleChangePhotoClick">Seleccionar Imagen</IonButton>  
             <div v-if="imageSrc" class="image-preview">  
               <img :src="imageSrc" alt="Preview" class="preview-img" />  
             </div>  
@@ -56,7 +56,7 @@
   import { useRouter } from 'vue-router';  
   import useUserStore from '@/store/userStore';  
   import { IonModal, IonHeader, IonToolbar, IonTitle, IonButtons, IonButton, IonContent, IonItem, IonLabel, IonInput } from '@ionic/vue';  
-import router from '@/router';
+  import router from '@/router';
   
   const props = defineProps<{  
     isOpen: boolean;  
@@ -80,7 +80,7 @@ import router from '@/router';
   
   const userStore = useUserStore();  
   const loading = ref(false); 
-  const fileInput = ref(null); 
+  const fileInput = ref<HTMLInputElement | null>(null);  
   const errorMessage = ref('');  
   const imageSrc = ref('');  
   const form = ref({  
@@ -92,6 +92,12 @@ import router from '@/router';
   const close = () => {  
     emit('close');  
   };  
+
+  const handleChangePhotoClick = () => {  
+    if (fileInput.value) {  
+      fileInput.value.click(); // Aquí ahora TypeScript reconoce `click`  
+    }  
+  }; 
   
   const updateProfile = async () => {  
     loading.value = true;  

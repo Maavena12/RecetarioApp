@@ -18,7 +18,7 @@
           style="display: none" 
           ref="fileInput"  
         />  
-    <IonButton expand="full" @click="fileInput.click()">Cambiar Foto Perfil</IonButton>  
+    <IonButton expand="full" @click="handleChangePhotoClick">Cambiar Foto Perfil</IonButton>  
       </div>  
     </IonContent>  
   </IonModal>  
@@ -38,7 +38,7 @@ const userStore = useUserStore();
 const userLog = ref()
 const image = ref('')
 const router = useRouter();
-const fileInput = ref(null);
+const fileInput = ref<HTMLInputElement | null>(null); 
 
 watch(() => props.user, (newUser) => {  
   userLog.value = newUser
@@ -51,6 +51,12 @@ const emit = defineEmits<{
 const close = () => {  
   emit('close'); // Emitir evento para cerrar el modal  
 };  
+
+const handleChangePhotoClick = () => {  
+  if (fileInput.value) {  
+    fileInput.value.click(); // Aquí ahora TypeScript reconoce `click`  
+  }  
+}; 
 
 const removePhoto = () => {  
   const user = {
@@ -82,17 +88,21 @@ const changeProfilePhoto = async (image: string) => {
   router.push({path: '/'})   
 };  
 
-const onImageChange = (event) => {  
-  const file = event.target.files[0]; // Obtener el archivo seleccionado  
+const onImageChange = async (event: Event) => {  
+  const target = event.target as HTMLInputElement;  
+  const file = target.files?.[0];  
+
   if (file) {  
     const reader = new FileReader();  
     reader.onload = async (e) => {  
-      const imageSrc = e.target.result; // Obtener la imagen como URL  
-      // Aquí puedes hacer lo que necesites con la imagen, por ejemplo, actualizar el estado del perfil  
-      console.log(imageSrc);  
-      
-      // Redirigir a la función changeProfilePhoto y pasar la imagen  
-      await changeProfilePhoto(imageSrc); // Llamar a la función con la ruta de la imagen  
+      const imageSrc = e.target?.result;  
+
+      if (imageSrc && typeof imageSrc === 'string') { // Comprobamos si imageSrc no es null y es string  
+        console.log(imageSrc);  
+        await changeProfilePhoto(imageSrc)  
+      } else {  
+        console.error("Error:  La imagen no se pudo cargar.");  
+      }  
     };  
     reader.readAsDataURL(file);  
   }  

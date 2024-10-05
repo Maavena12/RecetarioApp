@@ -15,7 +15,7 @@
                     v-for="star in 5"  
                     :key="star"  
                     class="star"  
-                    :class="{ filled: star <= Math.floor(calculateAverage(post.reviews)), half: star === Math.ceil(calculateAverage(post.reviews)) && calculateAverage(post.reviews) % 1 !== 0 }"  
+                    :class="{ filled: star <= Math.floor(Number(calculateAverage(post.reviews))), half: star === Math.ceil(Number(calculateAverage(post.reviews))) && Number(calculateAverage(post.reviews)) % 1 !== 0 }"  
                   >  
                     ★  
                   </span>  
@@ -36,6 +36,8 @@ import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';  
 import useUserStore from '../store/userStore';  
 import useRecipeStore from '@/store/recipeStore';  
+import { User } from '@/interface/user';
+import { Recipe } from '@/interface/recipe';
 
 const userStore = useUserStore();  
 const recipeStore = useRecipeStore();  
@@ -44,8 +46,8 @@ const userName = ref('');
 const image = ref('');  
 const userLog = ref();  
 const router = useRouter();  
-const recipes = ref([]);  
-const users = ref([]);  
+const recipes = ref<Recipe[]>([]);  
+const users = ref<User | null>(null);  
 
 onMounted(async () => {  
   const user = localStorage.getItem('currentUser');  
@@ -53,29 +55,22 @@ onMounted(async () => {
     isLoggedIn.value = true;  
     userLog.value = user;  
     users.value = await userStore.fetchUser(JSON.parse(user).id);  
-    userName.value = users.value.nombreUsuario;  
-    image.value = users.value.image;  
+    if (users.value) {  
+      userName.value = users.value.nombreUsuario;  
+      image.value = users.value.image;  
+    }   
   }  
   recipes.value = await recipeStore.fetchRecipebyUsers();  
 });  
 
-function gotoHome() {  
-  router.push('/');  
-}  
 
-async function gotoProfile() {  
-  router.push({  
-    path: `/profile/${users.value.id}/${users.value.nombre}/${users.value.apellido}/${users.value.nombreUsuario}/${users.value.correo}/${encodeURIComponent(users.value.image)}`,  
-  });  
-}  
-
-function calculateAverage(reviews) {  
+function calculateAverage(reviews: any[]) {  
   if (reviews.length === 0) return 0;  
-  const totalEstrellas = reviews.reduce((acc, review) => acc + review.estrellas, 0);  
+  const totalEstrellas = reviews.reduce((acc: any, review: { estrellas: any; }) => acc + review.estrellas, 0);  
   return (totalEstrellas / reviews.length).toFixed(1);  
 }  
 
-async function gotoInfo(id) {  
+async function gotoInfo(id: number) {  
   router.push({ path: `/recipeInfo/${id}` });  
 }  
 </script>  

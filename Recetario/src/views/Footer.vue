@@ -25,16 +25,18 @@
   import { useRouter } from 'vue-router';  
   import useUserStore from '../store/userStore';  
   import useRecipeStore from '@/store/recipeStore';  
+  import { User } from '@/interface/user';
+  import { Recipe } from '@/interface/recipe';
   
   const userStore = useUserStore();  
   const recipeStore = useRecipeStore();  
   const isLoggedIn = ref(false);  
-  const userName = ref('');  
+  const userName = ref<User | string>('');  
   const image = ref('');  
   const userLog = ref();  
   const router = useRouter();  
-  const recipes = ref([]);  
-  const users = ref([]);  
+  const recipes = ref<Recipe[]>([]);  
+  const users = ref<User | null>(null); 
   
   onMounted(async () => {  
     const user = localStorage.getItem('currentUser'); 
@@ -42,8 +44,10 @@
       isLoggedIn.value = true;  
       userLog.value = user;  
       users.value = await userStore.fetchUser(JSON.parse(user).id);  
-      userName.value = users.value.nombreUsuario;  
-      image.value = users.value.image;  
+      if (users.value) {  
+        userName.value = users.value.nombreUsuario;  
+        image.value = users.value.image;  
+      }  
     }  
     recipes.value = await recipeStore.fetchRecipebyUsers(); 
   });  
@@ -53,9 +57,11 @@
   }  
   
   async function gotoProfile() {  
-    router.push({  
+    if (users.value){
+      router.push({  
       path: `/profile/${users.value.id}/${users.value.nombre}/${users.value.apellido}/${users.value.nombreUsuario}/${users.value.correo}/${encodeURIComponent(users.value.image)}`,  
-    });  
+    });
+    }  
   }  
 
   async function gotoSearch() {  

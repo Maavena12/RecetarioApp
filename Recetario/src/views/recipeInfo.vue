@@ -34,7 +34,7 @@
                     <h2>Comentarios:</h2> 
                     <div class="user-list">
                         <div v-for="(user, index) in users" :key="user.id" class="user-item">
-                          <img :src="user.image" :alt="user.name" class="user-image" />
+                          <img :src="user.image" :alt="user.nombre" class="user-image" />
                           <span class="user-name" style="padding-right: 10px;">{{ user.nombreUsuario }}:</span>
                           <span class="user-name">{{ reviews[index].comentario }}</span>
                           <div class="stars">  
@@ -92,6 +92,8 @@ import useRecipeStore from '@/store/recipeStore';
 import { Ingredient } from '@/interface/ingredient';
 import useReviewStore from '@/store/reviewsStore';
 import useUserStore from '@/store/userStore';
+import { User } from '@/interface/user';
+import { Review } from '@/interface/review'
 
 const ingredientStore = useIngredientStore();
 const recipeStore = useRecipeStore();
@@ -104,7 +106,7 @@ const ingredients = ref<Ingredient[]>([]);
 const letter = ref(false)
 const reviews = ref()
 const number = ref(0)
-const users = ref([])
+const users = ref<User[]>([])
 const LogInUser = ref(false)
 const user = ref()
 const newComment = ref('');
@@ -115,12 +117,12 @@ onMounted(async () => {
     user.value = localStorage.getItem('currentUser');
     letter.value = await containsLetter(route.params.id)
     if (letter.value){
-        const recipeId = route.params.id;
+        const recipeId = route.params.id as string;
         recipe.value = await recipeStore.fetchRecipebyId(recipeId);
         ingredients.value = await ingredientStore.fetchIngredientsbyId(recipeId);
         reviews.value = await reviewStore.fetchReviewsbyId(recipeId)
         await getUsers()
-        number.value = await calculateAverage()
+        number.value = await calculateAverage() ?? 0
         await isLogInUser()
     } else {
         const recipeId = Number(route.params.id);
@@ -129,7 +131,7 @@ onMounted(async () => {
         reviews.value = await reviewStore.fetchReviewsbyId(recipeId)
         console.log('eeeeee', reviews.value)
         await getUsers()
-        number.value = await calculateAverage()
+        number.value = await calculateAverage() ?? 0
         await isLogInUser()
     }
 }); 
@@ -161,16 +163,16 @@ async function containsLetter(variable: any) {
 }
 
 async function calculateAverage() {  
-    const values = reviews.value.map(item => item.estrellas); 
+    const values = reviews.value.map((item: { estrellas: any; }) => item.estrellas); 
     let average;
 
     if (values.length === 0) {  
-    average = null;  
-    return;  
+        average = null;  
+        return;  
     }  
 
     // Calcular el promedio  
-    const sum = values.reduce((acc, num) => acc + num, 0);  
+    const sum = values.reduce((acc: any, num: any) => acc + num, 0);  
     average = sum / values.length;  
     return average;
 } 
@@ -199,8 +201,8 @@ async function submitComment() {
     }
     
     // Aquí iría la lógica para enviar el nuevo comentario.
-    const commentData = {
-        idUser: Number(JSON.parse(localStorage.getItem('currentUser')).id),
+    const commentData: Review = {
+        idUser: Number(JSON.parse(user.value.id)),
         idRecipe: Number(route.params.id),
         comentario: newComment.value,
         estrellas: Number(rating.value)

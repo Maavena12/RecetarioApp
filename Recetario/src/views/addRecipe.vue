@@ -9,7 +9,12 @@
         
         <ion-item>
           <ion-label position="floating">Descripción</ion-label>
-          <ion-textarea v-model="recipe.descripcion" @ionChange="handleChange('descripcion', $event)" required></ion-textarea>
+          <textarea
+            v-model="recipe.descripcion"
+            @ionChange="handleChange('descripcion', $event)"
+            required
+            class="custom-textarea"
+          ></textarea>
         </ion-item>
         
         <ion-item>
@@ -21,7 +26,12 @@
   
         <ion-item>
           <ion-label position="floating">Preparación</ion-label>
-          <ion-textarea v-model="recipe.preparacion" @ionChange="handleChange('preparacion', $event)" required></ion-textarea>
+          <textarea
+            v-model="recipe.preparacion"
+            @ionChange="handleChange('preparacion', $event)"
+            required
+            class="custom-textarea"
+          ></textarea>
         </ion-item>
   
         <ion-button expand="full" type="submit">Agregar Receta</ion-button>
@@ -66,6 +76,7 @@ import { onMounted } from 'vue';
 import useRecipeStore from '@/store/recipeStore';
 import useIngredientStore from '@/store/ingredientStore';
 import router from '@/router';
+import { Ingredient } from '@/interface/ingredient';
 
 const recipeStore = useRecipeStore();
 const ingredientStore = useIngredientStore()
@@ -85,7 +96,7 @@ const currentStep = ref(1);
 const idUser = ref()
 const disabled = ref(false)
 const resp = ref()
-const ingredientsName = ref([])
+const ingredientsName = ref<Ingredient[]>([])
 const userInfo = ref()
 
 onMounted(() => {  
@@ -113,17 +124,22 @@ async function handleChange(field: string, event: any){
     }
 };
 
-const handleImageUpload = (event: any) => {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-        imageUrl.value = e.target.result;
-        recipe.value.imagen = imageUrl.value;
-        };
-        reader.readAsDataURL(file);
-    }
-};
+const handleImageUpload = (event: Event) => {  
+    const fileInput = event.target as HTMLInputElement; // Aseguramos que es un input  
+    const file = fileInput.files?.[0]; // Usa el "optional chaining" para evitar el acceso a undefined  
+
+    if (file) {  
+        const reader = new FileReader();  
+        reader.onload = (e) => {  
+            const result = e.target?.result; // Usa el optional chaining para evitar el acceso a null  
+            if (typeof result === 'string') { // Asegúrate de que el resultado es un string  
+                imageUrl.value = result;  
+                recipe.value.imagen = result;  
+            }  
+        };  
+        reader.readAsDataURL(file);  
+    }  
+}; 
 
 async function addIngredient(){
   const newIngredient = {
@@ -160,5 +176,19 @@ const submitForm = async () => {
 </script>
   
 <style scoped>
-/* Puedes añadir estilos aquí si lo necesitas */
+
+.custom-textarea {
+  width: 100%;
+  padding: 20px; /* Espaciado interno similar a ion-textarea */
+  font-size: 14px; /* Tamaño de fuente */
+  resize: vertical; /* Permite redimensionar verticalmente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.custom-textarea:focus {
+  outline: none; /* Elimina el borde predeterminado en el foco */
+  border-color: var(--ion-color-primary); /* Cambia a color primario de Ionic en foco */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra brillante en foco */
+}
+
 </style>

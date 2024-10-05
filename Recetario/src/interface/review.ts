@@ -1,5 +1,5 @@
 export interface Review {
-    id: number | string,
+    id?: number | string,
     idUser: number,
     idRecipe: number | string,
     comentario: string,

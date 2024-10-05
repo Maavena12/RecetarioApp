@@ -2,8 +2,13 @@ import { defineStore } from 'pinia';
 import axios from 'axios';  
 import { user } from '@/interface/user';
 
+interface UserStoreState {  
+  users: user[]; // Asegúrate de que users sea un array de user  
+  currentUser: user | null;  
+} 
+
 const useUserStore = defineStore('user', {  
-  state: () => ({  
+  state: (): UserStoreState => ({  
     users: [],  
     currentUser: null,  
   }),  
@@ -20,8 +25,8 @@ const useUserStore = defineStore('user', {
     async updateUser(user: Partial<user>) {  
       const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users`);
       const allUsers = response.data
-      const equalName = allUsers.find(users => users.nombreUsuario === user.nombreUsuario && users.id !== user.id)
-      const equalEmail = allUsers.find(users => users.correo === user.correo && users.id !== user.id)
+      const equalName = allUsers.find((users: { nombreUsuario: string | undefined; id: number | undefined; }) => users.nombreUsuario === user.nombreUsuario && users.id !== user.id)
+      const equalEmail = allUsers.find((users: { correo: string | undefined; id: number | undefined; }) => users.correo === user.correo && users.id !== user.id)
       if (equalName === undefined && equalEmail === undefined){
         await axios.put(`${import.meta.env.VITE_JSON_SERVER_URL}/users/${user.id}`, user);  
         this.loadSession()
@@ -50,7 +55,7 @@ const useUserStore = defineStore('user', {
       const response = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/users`, {  
         params: { email, password },  
       });  
-      const authenticatedUsers = response.data.filter(user => 
+      const authenticatedUsers = response.data.filter((user: { correo: string; contraseña: string; }) => 
         user.correo === email && user.contraseña === password
       );
       if (authenticatedUsers.length > 0) {  

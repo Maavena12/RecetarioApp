@@ -72,7 +72,7 @@
 
       const reader = new FileReader();
       reader.onload = (e) => {
-        image.value = e.target.result
+        image.value = e.target?.result as string;
       };
       reader.readAsDataURL(file);
     }
