@@ -10,6 +10,7 @@
           <ion-label position="floating">Contraseña</ion-label>  
           <ion-input type="password" v-model="password" @ionChange="handleChange('password', $event)" required></ion-input>  
         </ion-item>  
+        <p>Usuario de ejemplo para demo: carlos.lopez@example.com y 12345678</p>
         <ion-button expand="full" type="submit" :disabled="loading">Iniciar Sesión</ion-button>  
         <p v-if="loading" class="ion-text-center">Cargando...</p>  
         <p v-if="error" class="ion-text-center" style="color: red;">{{ error }}</p>  
