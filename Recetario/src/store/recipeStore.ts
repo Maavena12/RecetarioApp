@@ -46,7 +46,7 @@ const useRecipeStore = defineStore('recipe', {
       this.recipes = [response.data];  // Ajustamos para que sea un array de recetas  
       return response.data;  
     },   
-    async fetchRecipebyUsers() {  
+    async fetchRecipebyUsers() { 
       const response = await axios.get<Recipe[]>(`${import.meta.env.VITE_JSON_SERVER_URL}/recipe`);  
       const user = localStorage.getItem('currentUser');  
       const reviewsResponse = await axios.get(`${import.meta.env.VITE_JSON_SERVER_URL}/reseñas`);  
@@ -60,7 +60,7 @@ const useRecipeStore = defineStore('recipe', {
       
       // Mapeo de recetas para añadir reseñas  
       const filteredArrayWithReviews = filteredArray.map(recipe => {  
-        recipe.reviews = reviews.filter((review: { idRecipe: number; }) => review.idRecipe === recipe.id);  
+        recipe.reviews = reviews.filter((review: { idRecipe: number; }) => review.idRecipe === Number(recipe.id));  
         return recipe;  
       });  
       
