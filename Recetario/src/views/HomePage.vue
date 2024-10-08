@@ -90,6 +90,10 @@ async function gotoInfo(id: number) {
   border-radius: 8px;  
 }  
 
+ion-card {  
+  width: 350px; /* Altura fija de la card */  
+}  
+
 .stars {  
   display: flex;  
   padding-left: 10px;  
