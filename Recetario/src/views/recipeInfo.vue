@@ -268,13 +268,20 @@ async function submitComment() {
     .user-list {
         display: flex;
         flex-direction: column; /* Para apilar los usuarios verticalmente */
-      }
+    }
       
       .user-item {
         display: flex;
         align-items: center; /* Alinear verticalmente la imagen y el texto */
         margin: 10px 0; /* Espacio entre cada usuario */
-      }
+    }
+
+    @media (max-width: 600px) {  
+        .user-item {  
+            justify-content: flex-start; /* Alinear contenido al inicio */  
+            flex-wrap: wrap; /* Permitir que el texto se ajuste en nuevas líneas si es largo */  
+        }  
+    }  
       
       .user-image {
         width: 40px; /* Tamaño de la imagen */
