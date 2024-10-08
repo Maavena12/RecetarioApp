@@ -85,13 +85,13 @@ async function gotoInfo(id: number) {
 }  
 
 .image-container img {  
-  max-width: 100%;  
+  width: 100%;  
   max-height: 100%;  
   border-radius: 8px;  
 }  
 
 ion-card {  
-  width: 350px; /* Altura fija de la card */  
+  width: 330px; /* Altura fija de la card */  
 }  
 
 .stars {  
