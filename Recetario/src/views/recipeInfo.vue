@@ -1,88 +1,90 @@
 <template>  
-    <ion-content>
-        <ion-card v-if="recipe && ingredients.length">  
-            <div class="image-container">
-                <img :src="recipe.imagen" alt="Image of {{ recipe.nombre }}" />  
-            </div>
-            <ion-card-header class="card-header">  
-                <ion-card-title>{{ recipe.nombre }} ({{ number }}) </ion-card-title>  
-                <div class="stars">  
-                    <span  
-                        v-for="star in 5"  
-                        :key="star"  
-                        class="star"  
-                        :class="{ filled: star <= Math.floor(number), // Estrellas llenas  
-                            half: star === Math.ceil(number) && number % 1 !== 0 // Estrella media
-                        }"  
-                    >  
-                        ★  
-                    </span> 
+    <ion-content>  
+        <div class="container"> <!-- Contenedor añadido -->  
+            <ion-card v-if="recipe && ingredients.length">  
+                <div class="image-container">  
+                    <img :src="recipe.imagen" alt="Image of {{ recipe.nombre }}" />  
                 </div>  
-            </ion-card-header> 
-            <ion-card-content> 
-                <h2>Descripción</h2> 
-                <p>{{ recipe.descripcion }}</p>
-                <br>
-                <h2>Ingredientes</h2>  
-                <ul>  
-                    <li v-for="ingredient in ingredients" :key="ingredient.id">{{ ingredient.cantidad }} de {{ ingredient.nombre }}</li>  
-                </ul>  
-                <h2>Preparación</h2>  
-                <p>{{ recipe.preparacion }}</p>
-                <br>
-                <div v-if="users">
-                    <h2>Comentarios:</h2> 
-                    <div class="user-list">
-                        <div v-for="(user, index) in users" :key="user.id" class="user-item">
-                          <img :src="user.image" :alt="user.nombre" class="user-image" />
-                          <span class="user-name" style="padding-right: 10px;">{{ user.nombreUsuario }}:</span>
-                          <span class="user-name">{{ reviews[index].comentario }}</span>
-                          <div class="stars">  
-                            <span  
-                                v-for="star in 5"  
-                                :key="star"  
-                                class="star"  
-                                :class="{ filled: star <= Math.floor(reviews[index].estrellas), // Estrellas llenas  
-                                    half: star === Math.ceil(reviews[index].estrellas) && reviews[index].estrellas % 1 !== 0 // Estrella media
-                                }"  
-                            >  
-                                ★  
-                            </span> 
-                          </div>  
-                        </div>
-                    </div>
-
-                    <div v-if="!LogInUser">
-                        <h3>Agregar Comentario</h3>
-                        <textarea v-model="newComment" placeholder="Escribe tu comentario aquí..." rows="4" class="comment-input"></textarea>
-                        <h3>Agregar Calificación</h3>
-                        <div class="rating-container">
-                            <div class="stars">  
+                <ion-card-header class="card-header">  
+                    <ion-card-title>{{ recipe.nombre }} ({{ number }}) </ion-card-title>  
+                    <div class="stars">  
+                        <span  
+                            v-for="star in 5"  
+                            :key="star"  
+                            class="star"  
+                            :class="{ filled: star <= Math.floor(number), // Estrellas llenas  
+                                half: star === Math.ceil(number) && number % 1 !== 0 // Estrella media  
+                            }"  
+                        >  
+                            ★  
+                        </span>   
+                    </div>  
+                </ion-card-header>   
+                <ion-card-content>   
+                    <h2>Descripción</h2>   
+                    <p>{{ recipe.descripcion }}</p>  
+                    <br>  
+                    <h2>Ingredientes</h2>  
+                    <ul>  
+                        <li v-for="ingredient in ingredients" :key="ingredient.id">{{ ingredient.cantidad }} de {{ ingredient.nombre }}</li>  
+                    </ul>  
+                    <h2>Preparación</h2>  
+                    <p>{{ recipe.preparacion }}</p>  
+                    <br>  
+                    <div v-if="users">  
+                        <h2>Comentarios:</h2>   
+                        <div class="user-list">  
+                            <div v-for="(user, index) in users" :key="user.id" class="user-item">  
+                              <img :src="user.image" :alt="user.nombre" class="user-image" />  
+                              <span class="user-name" style="padding-right: 10px;">{{ user.nombreUsuario }}:</span>  
+                              <span class="user-name">{{ reviews[index].comentario }}</span>  
+                              <div class="stars">  
                                 <span  
                                     v-for="star in 5"  
                                     :key="star"  
                                     class="star"  
-                                    :class="{ filled: star <= Math.floor(rating), // Estrellas llenas  
-                                        half: star === Math.ceil(rating) && rating % 1 !== 0 // Estrella media
+                                    :class="{ filled: star <= Math.floor(reviews[index].estrellas), // Estrellas llenas  
+                                        half: star === Math.ceil(reviews[index].estrellas) && reviews[index].estrellas % 1 !== 0 // Estrella media  
                                     }"  
                                 >  
                                     ★  
-                                </span> 
-                            </div>
-                            <div class="rating-control">
-                                <button @click="decreaseRating">⬇️</button>
-                                <span class="current-rating">{{ rating.toFixed(1) }}</span>
-                                <button @click="increaseRating">⬆️</button>
-                            </div>
-                        </div>
-                        <ion-button color="primary" @click="submitComment">Enviar Comentario</ion-button>
-                    </div>
-                </div>
-            </ion-card-content>  
-        </ion-card>  
-        <p v-else>Cargando...</p>
-    </ion-content>
-</template> 
+                                </span>   
+                              </div>  
+                            </div>  
+                        </div>  
+
+                        <div v-if="!LogInUser">  
+                            <h3>Agregar Comentario</h3>  
+                            <textarea v-model="newComment" placeholder="Escribe tu comentario aquí..." rows="4" class="comment-input"></textarea>  
+                            <h3>Agregar Calificación</h3>  
+                            <div class="rating-container">  
+                                <div class="stars">  
+                                    <span  
+                                        v-for="star in 5"  
+                                        :key="star"  
+                                        class="star"  
+                                        :class="{ filled: star <= Math.floor(rating), // Estrellas llenas  
+                                            half: star === Math.ceil(rating) && rating % 1 !== 0 // Estrella media  
+                                        }"  
+                                    >  
+                                        ★  
+                                    </span>   
+                                </div>  
+                                <div class="rating-control">  
+                                    <button @click="decreaseRating">⬇️</button>  
+                                    <span class="current-rating">{{ rating.toFixed(1) }}</span>  
+                                    <button @click="increaseRating">⬆️</button>  
+                                </div>  
+                            </div>  
+                            <ion-button color="primary" @click="submitComment">Enviar Comentario</ion-button>  
+                        </div>  
+                    </div>  
+                </ion-card-content>  
+            </ion-card>  
+            <p v-else>Cargando...</p>  
+        </div> <!-- Fin del contenedor -->  
+    </ion-content>  
+</template>  
   
 <script setup lang="ts">  
 import { ref, onMounted } from 'vue';  
@@ -213,7 +215,10 @@ async function submitComment() {
 }
 </script>  
   
-<style scoped>  
+<style scoped> 
+    .container {  
+        padding: 16px; /* Ajusta el padding según tu diseño */  
+    }  
     ion-card {  
         margin: 16px;  
     }
