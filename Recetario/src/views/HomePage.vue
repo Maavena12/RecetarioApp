@@ -1,6 +1,5 @@
 <template>  
-    <ion-content>  
-      <!-- Aquí va el contenido de las recetas -->  
+    <ion-content>   
       <ion-list>  
         <ion-item v-for="post in recipes" :key="post.id">  
           <ion-card @click="gotoInfo(post.id)">  
@@ -76,7 +75,6 @@ async function gotoInfo(id: number) {
 </script>  
 
 <style scoped>  
-/* Tu estilo actual */  
 .image-container {  
   display: flex;  
   justify-content: center;  
@@ -115,8 +113,16 @@ ion-card {
   align-items: center;  
 }  
 
-/* Adicional para el footer */  
+@media (min-width: 400px) {  
+  ion-list {  
+    display: flex;  
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 5px; 
+  }  
+}  
+
 ion-footer {  
   background-color: white; /* Puedes cambiar el color de fondo según el diseño deseado */  
 }  
-</style>
+</style>  
